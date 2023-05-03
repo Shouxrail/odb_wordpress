@@ -20,7 +20,7 @@
 
 <body>
 
-    <header id="header-1" class="sticky-top">
+    <header id="header-1">
         <div class="header-container row">
             <?php
                 if ( function_exists( 'the_custom_logo' ) ) {

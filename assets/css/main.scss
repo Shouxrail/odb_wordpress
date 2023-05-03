@@ -9,6 +9,7 @@ body {
     font-family: 'Raleway', sans-serif !important;
 
     header {
+        position: fixed;
         height: 0px;
         overflow: hidden;
         transition: 0.2s;
@@ -278,195 +279,6 @@ body {
                 }
             }
         }
-
-        .odb_beranda-content-container {
-            padding: 50px 100px;
-
-            .odb_beranda-subtitle-text {
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 159.4%;
-                text-align: center;
-                letter-spacing: 0.05em;
-                max-width: 710px;
-                margin: auto;
-                margin-bottom: 40px
-            }
-
-            .odb_content1-container {
-                .odb_content1-item {
-                    img {
-                        width: 392px;
-                        height: 428px;
-                        margin-bottom: 16px;
-                    }
-    
-                    div {
-                        font-weight: 500;
-                        font-size: 20px;
-                        text-align: center;
-                        letter-spacing: 0.03em;
-                    }
-                }
-            }
-
-            .odb_content2-container {
-                .odb_content2-item {
-                    img {
-                        max-width: 390px;
-                        max-height: 320px;
-                        width: 100%;
-                        margin-bottom: 36px;
-                    }
-    
-                    .title {
-                        font-weight: 700;
-                        font-size: 15px;
-                        text-align: center;
-                        letter-spacing: 0.2em;
-                        margin-bottom: 24px;
-                    }
-
-                    .text {
-                        font-size: 15px;
-                        text-align: center;
-                        letter-spacing: 0.2em;
-                        max-width: 225px;
-                        margin: auto;
-                    }
-                }
-            }
-
-            .odb_content3-container {
-                .odb_content3-item {
-                    padding: 32px;
-                    max-width: 350px;
-                    text-align: center;
-
-                    img {
-                        width: 250px;
-                        height: 250px;
-                        margin-bottom: 36px;
-                    }
-    
-                    .nama {
-                        font-weight: 700;
-                        font-size: 20px;
-                        text-align: center;
-                        letter-spacing: 0.2em;
-                        margin-bottom: 24px;
-                    }
-
-                    .job {
-                        font-size: 18px;
-                        text-align: center;
-                        letter-spacing: 0.2em;
-                        margin-bottom: 24px;
-                    }
-
-                    .text {
-                        font-size: 16px;
-                        text-align: center;
-                        letter-spacing: 0.2em;
-                        margin: auto;
-                    }
-                }
-            }
-
-            .odb_content4-container {
-                align-self: center;
-
-                .odb_content4-item {
-                    padding: 32px;
-
-                    .odb_content4-img {
-                        width: 100%;
-                        margin-bottom: 17px;
-                    }
-
-                    .odb_feed-container {
-                        margin-bottom: 23px;
-
-                        .odb_feed-item {
-                            img {
-                                width: 30px;
-                                height: 30px;
-                            }
-                        }
-                    }
-
-                    .odb_feed-content {
-                        .odb_feed-profile {
-                            align-items: center;
-
-                            img {
-                                width: 56px;
-                                height: 56px;
-                                border-radius: 50px;
-                            }
-
-                            span {
-                                color: $gray;
-                                font-size: 20px;
-                                letter-spacing: 0.005em;
-                            }
-                        }
-
-                        .odb_feed-text {
-                            padding-left: 73px;
-
-                            p {
-                                font-weight: 300;
-                                font-size: 16px;
-                                letter-spacing: 0.005em;
-                            }
-                        }
-                    }
-
-                }
-            }
-
-            .odb_content5-container {
-
-                .odb_content5-highlight-container {
-                    text-align: center;
-                    margin-bottom: 39px;
-                    
-                    .odb_content5-highlight {
-                        margin: auto;
-                        width: 711px;
-                        height: 400px;
-                        background: #909090;
-                        margin-top: 54px;
-                        margin-bottom: 21px;
-                    }
-                    
-                    span {
-                        font-weight: 600;
-                        font-size: 17px;
-                        letter-spacing: 0.005em;
-                    }
-                }
-
-                .odb_content5-item-container {
-                    .odb_content5-item {
-                        padding: 32px;
-    
-                        .odb_content5-item-img {
-                            min-height: 236px;
-                            background: #909090;
-                            margin-bottom: 29px;
-                        }
-    
-                        span {
-                            font-weight: 600;
-                            font-size: 17px;
-                            letter-spacing: 0.005em;
-                        }
-                    }
-                }
-            }
-        }
     }
 
     footer {
@@ -554,17 +366,16 @@ body {
 }
 
 .odb_beranda-title {
-    font-size: 18px;
-    text-align: center;
     letter-spacing: 0.68em;
-    margin-bottom: 33px;
 }
 
 .odb_beranda-subtitle {
     font-weight: 600;
-    font-size: 36px;
-    text-align: center;
     letter-spacing: 0.025em;
+}
+
+.odb_beranda-text {
+    letter-spacing: 0.05em;
 }
 
 .wpf_autocomplete:before {
@@ -576,4 +387,205 @@ body {
 
 .wpf_autocomplete:hover:before {
     display:none;
+}
+
+.h-100 {
+    height: 100%;
+
+    & > div {
+        height: 100%;
+    }
+}
+
+.odb_beranda-content1-container {
+    .carousel-slider__caption {
+        .caption {
+            font-weight: 500 !important;
+            font-size: 20px !important;
+            text-align: center !important;
+            letter-spacing: 0.03em !important;
+        }
+    }
+}
+
+.odb_beranda-content2-container {
+    .carousel-slider__caption {
+        max-width: 225px;
+        margin: auto;
+        margin-top: 36px;
+
+        .title {
+            font-weight: 700 !important;
+            font-size: 16px !important;
+            letter-spacing: 20% !important;
+        }
+
+        .caption {
+            font-size: 16px !important;
+            letter-spacing: 10% !important;
+        }
+    }
+}
+
+.odb_beranda-content-container {
+    padding: 50px 100px;
+    max-width: 1440px;
+    margin: auto;
+
+    .odb_content2-container {
+        .odb_content2-item {
+            img {
+                max-width: 390px;
+                max-height: 320px;
+                width: 100%;
+                margin-bottom: 36px;
+            }
+
+            .title {
+                font-weight: 700;
+                font-size: 15px;
+                text-align: center;
+                letter-spacing: 0.2em;
+                margin-bottom: 24px;
+            }
+
+            .text {
+                font-size: 15px;
+                text-align: center;
+                letter-spacing: 0.2em;
+                max-width: 225px;
+                margin: auto;
+            }
+        }
+    }
+
+    .odb_content3-container {
+        .odb_content3-item {
+            padding: 32px;
+            max-width: 350px;
+            text-align: center;
+
+            img {
+                width: 250px;
+                height: 250px;
+                margin-bottom: 36px;
+            }
+
+            .nama {
+                font-weight: 700;
+                font-size: 20px;
+                text-align: center;
+                letter-spacing: 0.2em;
+                margin-bottom: 24px;
+            }
+
+            .job {
+                font-size: 18px;
+                text-align: center;
+                letter-spacing: 0.2em;
+                margin-bottom: 24px;
+            }
+
+            .text {
+                font-size: 16px;
+                text-align: center;
+                letter-spacing: 0.2em;
+                margin: auto;
+            }
+        }
+    }
+
+    .odb_content4-container {
+        align-self: center;
+
+        .odb_content4-item {
+            padding: 32px;
+
+            .odb_content4-img {
+                width: 100%;
+                margin-bottom: 17px;
+            }
+
+            .odb_feed-container {
+                margin-bottom: 23px;
+
+                .odb_feed-item {
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+
+            .odb_feed-content {
+                .odb_feed-profile {
+                    align-items: center;
+
+                    img {
+                        width: 56px;
+                        height: 56px;
+                        border-radius: 50px;
+                    }
+
+                    span {
+                        color: $gray;
+                        font-size: 20px;
+                        letter-spacing: 0.005em;
+                    }
+                }
+
+                .odb_feed-text {
+                    padding-left: 73px;
+
+                    p {
+                        font-weight: 300;
+                        font-size: 16px;
+                        letter-spacing: 0.005em;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .odb_content5-container {
+
+        .odb_content5-highlight-container {
+            text-align: center;
+            margin-bottom: 39px;
+            
+            .odb_content5-highlight {
+                margin: auto;
+                width: 711px;
+                height: 400px;
+                background: #909090;
+                margin-top: 54px;
+                margin-bottom: 21px;
+            }
+            
+            span {
+                font-weight: 600;
+                font-size: 17px;
+                letter-spacing: 0.005em;
+            }
+        }
+
+        .odb_content5-item-container {
+            .odb_content5-item {
+                padding: 32px;
+
+                .odb_content5-item-img {
+                    min-height: 236px;
+                    background: #909090;
+                    margin-bottom: 29px;
+                }
+
+                span {
+                    font-weight: 600;
+                    font-size: 17px;
+                    letter-spacing: 0.005em;
+                }
+            }
+        }
+    }
 }

@@ -3,6 +3,7 @@ body {
   font-family: "Raleway", sans-serif !important;
 }
 body header {
+  position: fixed;
   height: 0px;
   overflow: hidden;
   transition: 0.2s;
@@ -229,147 +230,6 @@ body content .odb_sliderContainer .odb_sliderItemContainer .orchidee_sliderItem 
 body content .odb_sliderContainer .odb_sliderItemContainer .orchidee_sliderItem img {
   height: 100vh !important;
 }
-body content .odb_beranda-content-container {
-  padding: 50px 100px;
-}
-body content .odb_beranda-content-container .odb_beranda-subtitle-text {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 159.4%;
-  text-align: center;
-  letter-spacing: 0.05em;
-  max-width: 710px;
-  margin: auto;
-  margin-bottom: 40px;
-}
-body content .odb_beranda-content-container .odb_content1-container .odb_content1-item img {
-  width: 392px;
-  height: 428px;
-  margin-bottom: 16px;
-}
-body content .odb_beranda-content-container .odb_content1-container .odb_content1-item div {
-  font-weight: 500;
-  font-size: 20px;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-body content .odb_beranda-content-container .odb_content2-container .odb_content2-item img {
-  max-width: 390px;
-  max-height: 320px;
-  width: 100%;
-  margin-bottom: 36px;
-}
-body content .odb_beranda-content-container .odb_content2-container .odb_content2-item .title {
-  font-weight: 700;
-  font-size: 15px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  margin-bottom: 24px;
-}
-body content .odb_beranda-content-container .odb_content2-container .odb_content2-item .text {
-  font-size: 15px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  max-width: 225px;
-  margin: auto;
-}
-body content .odb_beranda-content-container .odb_content3-container .odb_content3-item {
-  padding: 32px;
-  max-width: 350px;
-  text-align: center;
-}
-body content .odb_beranda-content-container .odb_content3-container .odb_content3-item img {
-  width: 250px;
-  height: 250px;
-  margin-bottom: 36px;
-}
-body content .odb_beranda-content-container .odb_content3-container .odb_content3-item .nama {
-  font-weight: 700;
-  font-size: 20px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  margin-bottom: 24px;
-}
-body content .odb_beranda-content-container .odb_content3-container .odb_content3-item .job {
-  font-size: 18px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  margin-bottom: 24px;
-}
-body content .odb_beranda-content-container .odb_content3-container .odb_content3-item .text {
-  font-size: 16px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  margin: auto;
-}
-body content .odb_beranda-content-container .odb_content4-container {
-  align-self: center;
-}
-body content .odb_beranda-content-container .odb_content4-container .odb_content4-item {
-  padding: 32px;
-}
-body content .odb_beranda-content-container .odb_content4-container .odb_content4-item .odb_content4-img {
-  width: 100%;
-  margin-bottom: 17px;
-}
-body content .odb_beranda-content-container .odb_content4-container .odb_content4-item .odb_feed-container {
-  margin-bottom: 23px;
-}
-body content .odb_beranda-content-container .odb_content4-container .odb_content4-item .odb_feed-container .odb_feed-item img {
-  width: 30px;
-  height: 30px;
-}
-body content .odb_beranda-content-container .odb_content4-container .odb_content4-item .odb_feed-content .odb_feed-profile {
-  align-items: center;
-}
-body content .odb_beranda-content-container .odb_content4-container .odb_content4-item .odb_feed-content .odb_feed-profile img {
-  width: 56px;
-  height: 56px;
-  border-radius: 50px;
-}
-body content .odb_beranda-content-container .odb_content4-container .odb_content4-item .odb_feed-content .odb_feed-profile span {
-  color: #909090;
-  font-size: 20px;
-  letter-spacing: 0.005em;
-}
-body content .odb_beranda-content-container .odb_content4-container .odb_content4-item .odb_feed-content .odb_feed-text {
-  padding-left: 73px;
-}
-body content .odb_beranda-content-container .odb_content4-container .odb_content4-item .odb_feed-content .odb_feed-text p {
-  font-weight: 300;
-  font-size: 16px;
-  letter-spacing: 0.005em;
-}
-body content .odb_beranda-content-container .odb_content5-container .odb_content5-highlight-container {
-  text-align: center;
-  margin-bottom: 39px;
-}
-body content .odb_beranda-content-container .odb_content5-container .odb_content5-highlight-container .odb_content5-highlight {
-  margin: auto;
-  width: 711px;
-  height: 400px;
-  background: #909090;
-  margin-top: 54px;
-  margin-bottom: 21px;
-}
-body content .odb_beranda-content-container .odb_content5-container .odb_content5-highlight-container span {
-  font-weight: 600;
-  font-size: 17px;
-  letter-spacing: 0.005em;
-}
-body content .odb_beranda-content-container .odb_content5-container .odb_content5-item-container .odb_content5-item {
-  padding: 32px;
-}
-body content .odb_beranda-content-container .odb_content5-container .odb_content5-item-container .odb_content5-item .odb_content5-item-img {
-  min-height: 236px;
-  background: #909090;
-  margin-bottom: 29px;
-}
-body content .odb_beranda-content-container .odb_content5-container .odb_content5-item-container .odb_content5-item span {
-  font-weight: 600;
-  font-size: 17px;
-  letter-spacing: 0.005em;
-}
 body footer {
   background: url("../img/GRADIENT.png");
   background-position: center;
@@ -444,17 +304,16 @@ body footer .right .odb_copyright-text {
 }
 
 .odb_beranda-title {
-  font-size: 18px;
-  text-align: center;
   letter-spacing: 0.68em;
-  margin-bottom: 33px;
 }
 
 .odb_beranda-subtitle {
   font-weight: 600;
-  font-size: 36px;
-  text-align: center;
   letter-spacing: 0.025em;
+}
+
+.odb_beranda-text {
+  letter-spacing: 0.05em;
 }
 
 .wpf_autocomplete:before {
@@ -466,4 +325,156 @@ body footer .right .odb_copyright-text {
 
 .wpf_autocomplete:hover:before {
   display: none;
+}
+
+.h-100 {
+  height: 100%;
+}
+.h-100 > div {
+  height: 100%;
+}
+
+.odb_beranda-content1-container .carousel-slider__caption .caption {
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  text-align: center !important;
+  letter-spacing: 0.03em !important;
+}
+
+.odb_beranda-content2-container .carousel-slider__caption {
+  max-width: 225px;
+  margin: auto;
+  margin-top: 36px;
+}
+.odb_beranda-content2-container .carousel-slider__caption .title {
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  letter-spacing: 20% !important;
+}
+.odb_beranda-content2-container .carousel-slider__caption .caption {
+  font-size: 16px !important;
+  letter-spacing: 10% !important;
+}
+
+.odb_beranda-content-container {
+  padding: 50px 100px;
+  max-width: 1440px;
+  margin: auto;
+}
+.odb_beranda-content-container .odb_content2-container .odb_content2-item img {
+  max-width: 390px;
+  max-height: 320px;
+  width: 100%;
+  margin-bottom: 36px;
+}
+.odb_beranda-content-container .odb_content2-container .odb_content2-item .title {
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  margin-bottom: 24px;
+}
+.odb_beranda-content-container .odb_content2-container .odb_content2-item .text {
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  max-width: 225px;
+  margin: auto;
+}
+.odb_beranda-content-container .odb_content3-container .odb_content3-item {
+  padding: 32px;
+  max-width: 350px;
+  text-align: center;
+}
+.odb_beranda-content-container .odb_content3-container .odb_content3-item img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 36px;
+}
+.odb_beranda-content-container .odb_content3-container .odb_content3-item .nama {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  margin-bottom: 24px;
+}
+.odb_beranda-content-container .odb_content3-container .odb_content3-item .job {
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  margin-bottom: 24px;
+}
+.odb_beranda-content-container .odb_content3-container .odb_content3-item .text {
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  margin: auto;
+}
+.odb_beranda-content-container .odb_content4-container {
+  align-self: center;
+}
+.odb_beranda-content-container .odb_content4-container .odb_content4-item {
+  padding: 32px;
+}
+.odb_beranda-content-container .odb_content4-container .odb_content4-item .odb_content4-img {
+  width: 100%;
+  margin-bottom: 17px;
+}
+.odb_beranda-content-container .odb_content4-container .odb_content4-item .odb_feed-container {
+  margin-bottom: 23px;
+}
+.odb_beranda-content-container .odb_content4-container .odb_content4-item .odb_feed-container .odb_feed-item img {
+  width: 30px;
+  height: 30px;
+}
+.odb_beranda-content-container .odb_content4-container .odb_content4-item .odb_feed-content .odb_feed-profile {
+  align-items: center;
+}
+.odb_beranda-content-container .odb_content4-container .odb_content4-item .odb_feed-content .odb_feed-profile img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50px;
+}
+.odb_beranda-content-container .odb_content4-container .odb_content4-item .odb_feed-content .odb_feed-profile span {
+  color: #909090;
+  font-size: 20px;
+  letter-spacing: 0.005em;
+}
+.odb_beranda-content-container .odb_content4-container .odb_content4-item .odb_feed-content .odb_feed-text {
+  padding-left: 73px;
+}
+.odb_beranda-content-container .odb_content4-container .odb_content4-item .odb_feed-content .odb_feed-text p {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.005em;
+}
+.odb_beranda-content-container .odb_content5-container .odb_content5-highlight-container {
+  text-align: center;
+  margin-bottom: 39px;
+}
+.odb_beranda-content-container .odb_content5-container .odb_content5-highlight-container .odb_content5-highlight {
+  margin: auto;
+  width: 711px;
+  height: 400px;
+  background: #909090;
+  margin-top: 54px;
+  margin-bottom: 21px;
+}
+.odb_beranda-content-container .odb_content5-container .odb_content5-highlight-container span {
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 0.005em;
+}
+.odb_beranda-content-container .odb_content5-container .odb_content5-item-container .odb_content5-item {
+  padding: 32px;
+}
+.odb_beranda-content-container .odb_content5-container .odb_content5-item-container .odb_content5-item .odb_content5-item-img {
+  min-height: 236px;
+  background: #909090;
+  margin-bottom: 29px;
+}
+.odb_beranda-content-container .odb_content5-container .odb_content5-item-container .odb_content5-item span {
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 0.005em;
 }/*# sourceMappingURL=main.css.map */
