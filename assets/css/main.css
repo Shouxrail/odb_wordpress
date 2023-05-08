@@ -55,6 +55,10 @@ body #header-1 .header-container .right .nav-search .navbar-nav li a:hover {
   font-weight: 700;
   transition: 0.2s;
 }
+body #header-1 .header-container .right .nav-search .navbar-nav .current-menu-item {
+  font-weight: 700;
+  transition: 0.2s;
+}
 @media only screen and (min-width: 1200px) {
   body #header-1 .header-container .right .nav-search .navbar-nav #odb_search-nav {
     display: none;
@@ -198,6 +202,10 @@ body #header-2 .header-container .nav-search .navbar-nav li a {
   letter-spacing: 0.115em;
 }
 body #header-2 .header-container .nav-search .navbar-nav li a:hover {
+  font-weight: 700;
+  transition: 0.2s;
+}
+body #header-2 .header-container .nav-search .navbar-nav .current-menu-item {
   font-weight: 700;
   transition: 0.2s;
 }

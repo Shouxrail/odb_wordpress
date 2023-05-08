@@ -76,6 +76,11 @@ body {
                             }
                         }
 
+                        .current-menu-item {
+                            font-weight: 700;
+                            transition: 0.2s;
+                        }
+
                         #odb_search-nav {
 
                             @media only screen and (min-width: 1200px) {
@@ -251,6 +256,11 @@ body {
                                     transition: 0.2s;
                                 }
                             }
+                        }
+
+                        .current-menu-item {
+                            font-weight: 700;
+                            transition: 0.2s;
                         }
 
                         .odb_nav-dropdown-container {
