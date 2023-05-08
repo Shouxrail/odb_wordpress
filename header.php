@@ -28,19 +28,7 @@
                 }
             ?>
             <div class="right col-xl-10">
-                <div class="lang-sosmed row">
-                    <div class="col-xl-8"></div>
-                    <div class="lang text-end col-xl-1">
-                        <b>ID</b> | ENG
-                    </div>
-                    <div class="sosmed text-end col-xl-3">
-                        <a href=""><i class="fa-brands fa-youtube"></i></a>
-                        <a href=""><i class="fa-brands fa-tiktok"></i></a>
-                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                    </div>
-                </div>
+                <?php dynamic_sidebar( 'header_area_one' ); ?>
                 <div class="nav-search row">
                     <?php
 
@@ -60,42 +48,36 @@
                 </div>
             </div>
         </div>
-        <div class="header-bg-container">
-        </div>
+        <div class="header-bg-container"></div>
         <div class="header-bg"></div>
         <div class="header-bg2"></div>
     </header>
 
-    <header id="header-2" class="sticky-top">
-        <div class="header-container">
-            <a href="index.html" class="logo-container">
-                <img src="assets/img/LOGO.png" alt="Orchidee de Beauty" style="height: 45px;">
-            </a>
-            <div class="nav-search">
-                <nav>
-                    <a href="">BERANDA</a>
-                    <a href="">TREATMENT</a>
-                    <a href="">PRODUK</a>
-                    <a href="">TENTANG KAMI</a>
-                    <a href="">BLOG</a>
-                    <a href="">HUBUNGI KAMI</a>
-                    <a href="">SEARCH</a>
-                </nav>
+    <header id="header-2">
+        <div class="header-container row">
+            <div class="col-xl-1">
+                <?php
+                    if ( function_exists( 'the_custom_logo' ) ) {
+                        the_custom_logo();
+                    }
+                ?>
             </div>
-            <div class="lang-sosmed">
-                <div class="lang">
-                    <b>ID</b> | ENG
-                </div>
-                <div class="sosmed">
-                    <a href=""><img src="assets/icons/YOUTUBE_1_.svg" alt=""></a>
-                    <a href=""><img src="assets/icons/TIKTOK_1_.svg" alt=""></a>
-                    <a href=""><img src="assets/icons/FB.svg" alt=""></a>
-                    <a href=""><img src="assets/icons/INSTAGRAM_1_.svg" alt=""></a>
-                    <a href=""><img src="assets/icons/WA.svg" alt=""></a>
-                </div>
+            <div class="nav-search col-xl-8">
+                <?php
+
+                wp_nav_menu( array(
+                    'menu' => 'primary',
+                    'container' => '',
+                    'theme_location' => 'primary',
+                    'items_wrap' => '<ul id="" class="navbar-nav flex-md-row justify-content-end">%3$s<li id="odb_search-nav" class=""><a href="'.get_search_link().'">SEARCH</a></li></ul>'
+                ) );
+
+                ?>
+            </div>
+            <div class="lang-sosmed row col-xl-3">
+                <?php dynamic_sidebar( 'header_area_two' ); ?>
             </div>
         </div>
-        <div class="header-bg-container">
-        </div>
-        <img src="assets/img/GRADIENT.png" class="header-bg" />
+        <div class="header-bg-container"></div>
+        <div class="header-bg"></div>
     </header>

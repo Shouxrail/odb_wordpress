@@ -5,7 +5,7 @@ get_header(  );
 ?>
 
 
-<article class="content px-3">
+<article class="content">
 
     <?php
 

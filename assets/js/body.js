@@ -6,7 +6,7 @@ $(document).ready(() => {
         $('#header-2').css('height', '0px');
    } else {
         $('#header-1').css('height', '0px');
-        $('#header-2').css('height', '144px');
+        $('#header-2').css('height', '92px');
    }
 
    $("#s").attr("placeholder","SEARCH HERE");
@@ -22,6 +22,17 @@ $(document).ready(() => {
         $(v).removeClass('disabled');
         $(v).children().click(() => $(v).removeClass('disabled'));
     }); 
+
+    //beranda content3 carousel settings
+    $('.odb_beranda-content3-container .owl-nav.disabled').each((i, v) => {
+        $(v).removeClass('disabled');
+        $(v).children().css('padding', 30).click(() => $(v).removeClass('disabled'));
+    }); 
+    
+    $('.odb_beranda-content3-container .owl-nav.disabled').each((i, v) => {
+        $(v).removeClass('disabled');
+        $(v).children().click(() => $(v).removeClass('disabled'));
+    }); 
 });
 
 var lastScrollTop = 0;
@@ -32,7 +43,7 @@ $(window).scroll(function(event){
        $('#header-2').css('height', '0px');
    } else {
         $('#header-1').css('height', '0px');
-       $('#header-2').css('height', '144px');
+       $('#header-2').css('height', '92px');
    }
 });
 

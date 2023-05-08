@@ -4,23 +4,24 @@ $primaryColor: #762D5A;
 $secondaryColor: #46ffe6;
 $white: #FFFFFF;
 $gray: #909090;
+$fontFam: 'Raleway', sans-serif !important;
 
 body {
-    font-family: 'Raleway', sans-serif !important;
+    font-family: $fontFam;
 
     header {
-        position: fixed;
         height: 0px;
         overflow: hidden;
         transition: 0.2s;
     }
 
     #header-1 {
+        position: fixed;
         width: 100%;
         z-index: 99999;
 
         .header-container {
-            padding: 27px 50px 11px 50px;
+            padding: 27px 0px 11px 0px;
             margin: auto;
             max-width: 1440px;
 
@@ -35,6 +36,8 @@ body {
 
             .right {
                 .lang-sosmed {
+                    margin: 0px !important;
+
                     .lang {
                         color: $white;
                         margin-bottom: 40px;
@@ -190,46 +193,107 @@ body {
         z-index: 99999;
         
         .header-container {
-            padding: 11px 50px;
+            padding: 11px 0px;
             margin: auto;
             max-width: 1440px;
+            height: 100% !important;
             align-items: center;
 
-            .logo-container {
+            .custom-logo-link {
                 display: block;
+
+                .custom-logo {
+                    max-height: 45px !important;
+                    max-width: 125px;
+                }
             }
 
 
             .lang-sosmed {
                 align-items: center;
+                margin: 0px !important;
 
                 .lang {
                     color: $white;
+                    white-space: nowrap;
                 }
 
                 .sosmed {
-                    align-items: center;
+                    a {
+                        padding: 8px;
+                        text-align: center;
+
+                        i {
+                            font-size: 26px;
+                            color: $white;
+                        }
+                    }
                 }
             }
 
             .nav-search {
-                align-items: center;
-                padding: 38px 89px 0px 73px;
+                margin-top: 30px;
 
-                nav {
-                    margin: auto;
+                .navbar-nav {
+                        align-items: center;
 
-                    a {
-                        text-decoration: none;
-                        color: $white;
-                        width: 100%;
-                        letter-spacing: 0.115em;
+                        li {
+                            text-align: center;
+                            padding: 0px 8px;
+                            
+                            a {
+                                text-decoration: none;
+                                color: $white;
+                                letter-spacing: 0.115em;
+    
+                                &:hover {
+                                    font-weight: 700;
+                                    transition: 0.2s;
+                                }
+                            }
+                        }
 
-                        @media only screen and (min-width: 1440px) {
-                            white-space: nowrap;
+                        .odb_nav-dropdown-container {
+                            .odb_nav-dropdown {
+                                min-width: 200px;
+                                background: rgba(118, 45, 90, 0.8);
+                                border-radius: 0;
+                                padding: 0;
+                                border: none;
+
+                                
+                                li {
+                                    border-bottom: 1px solid $white;
+
+                                    &:hover {
+                                        background: rgba(214, 81, 163, 0.5);
+                                    }
+                                    
+                                    &:last-child {
+                                        border: none;
+                                    }
+
+                                    a {
+                                        position: relative;
+                                        font-weight: 700;
+                                        font-size: 12px;
+                                        letter-spacing: 0.36em;
+
+                                        &:hover {
+                                            background: none;
+                                        }
+
+                                        &::after {
+                                            content: '>';
+                                            position: absolute;
+                                            right: 0;
+                                        }
+                                    }
+                                }
+
+                            }
                         }
                     }
-                }
             }
         }
 
@@ -247,6 +311,9 @@ body {
         }
         .header-bg {
             filter: saturate(2);
+            background: url('http://orchidee.test/wp-content/uploads/2023/05/GRADIENT.png');
+            background-position: center;
+            background-size: cover;
             position: absolute;
             z-index: -2;
             top: 0;
@@ -277,85 +344,6 @@ body {
                         height: 100vh !important;
                     }
                 }
-            }
-        }
-    }
-
-    footer {
-        background: url('../img/GRADIENT.png');
-        background-position: center;
-        background-size: cover;
-        padding: 27px 60px;   
-
-        .left {
-            padding: 40px 0px 40px 24px;
-            min-width: 210px;
-
-            h6 {
-                font-weight: 700;
-                font-size: 18px;
-                letter-spacing: 0.02em;
-                color: $white;
-                text-transform: uppercase;
-            }
-
-            span {
-                font-weight: 500;
-                font-size: 18px;
-                letter-spacing: 0.02em;
-                color: $white;
-            }
-        }
-
-        .right {
-            text-align: right;
-            
-            .odb_toTop {
-                font-weight: 500;
-                font-size: 14px;
-                text-align: right;
-                color: $white;
-                margin-bottom: 60px;
-                background: unset;
-                border: none;
-
-                &:hover {
-                    filter: brightness(0.9);
-                    transition: 0.2s;
-                }
-            }
-
-            nav {
-                margin-bottom: 60px;
-                a {
-                    text-decoration: none;
-                    color: $white;
-                    font-size: 15px;
-                    letter-spacing: 0.105em;
-                    border-right: 1px solid $white;
-                    padding: 0px 15px;
-
-                    &:last-child {
-                        border: none;
-                        padding: 0px 0px 0px 15px;
-                    }
-                }
-            }
-
-            .odb_copyright {
-                font-weight: 700;
-                font-size: 14px;
-                letter-spacing: 0.02em;
-                color: $white;
-                text-transform: uppercase;
-                margin-bottom: 5px;
-            }
-
-            .odb_copyright-text {
-                font-weight: 500;
-                font-size: 14px;
-                letter-spacing: 0.02em;
-                color: $white;
             }
         }
     }
@@ -425,6 +413,57 @@ body {
             letter-spacing: 10% !important;
         }
     }
+}
+
+.odb_beranda-content3-container {
+    .owl-nav {
+        display: block !important;
+
+        button {
+            display: block !important;
+            background: unset !important;
+        }
+
+        .owl-prev {
+            background-color: unset !important;
+        }
+    }
+    .owl-item {
+        img {
+            // max-width: 250px !important;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 500px;
+        }
+    
+        h3 {
+            font-weight: 700 !important;
+            font-size: 16px !important;
+            letter-spacing: 20% !important;
+        }
+
+        p {
+            font-size: 16px !important;
+            letter-spacing: 10% !important;
+        }
+    }
+}
+
+.odb_beranda-content4-container {
+    .eapps-instagram-feed-posts-item-template-classic {
+        border: none !important;
+
+        .eapps-instagram-feed-posts-item-text {
+            font-family: $fontFam;
+            font-weight: 300;
+            font-size: 18px;
+            letter-spacing: 0.005em;
+        }
+    }
+}
+
+.odb_beranda-content6-container {
+    width: 100%;
 }
 
 .odb_beranda-content-container {
@@ -585,6 +624,102 @@ body {
                     font-size: 17px;
                     letter-spacing: 0.005em;
                 }
+            }
+        }
+    }
+}
+
+footer {
+    position: relative;
+    background: url('http://orchidee.test/wp-content/uploads/2023/05/GRADIENT.png');
+    background-position: center;
+    background-size: cover;
+    padding: 27px 60px 60px 60px;
+
+    .footer-container {
+        position: relative;
+        max-width: 1440px;
+        margin: auto;
+
+        .odb_footer-btt {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: none;
+            border: none;
+            color: $white;
+            font-weight: 500;
+            font-size: 10px;
+            letter-spacing: 0.02em;
+    
+            &:hover {
+                font-weight: 800;
+                transition: 0.2s;
+            }
+        }
+    
+        .odb_footer-left {
+            padding: 36px 0px 0px 24px;
+            text-align: left;
+    
+            .odb_footer-title {
+                font-weight: 700;
+                font-size: 16px;
+                letter-spacing: 0.02em;
+            }
+    
+            .odb_footer-address {
+                font-weight: 500;
+                font-size: 16px;
+                letter-spacing: 0.02em;
+            }
+        }
+    
+        .odb_footer-right {
+            text-align: right;
+    
+            nav {
+                ul {
+                    justify-content: end;
+                    list-style-type: none;
+                    display: flex;
+    
+                    li {
+                        padding: 0px 10px;
+                        border-right: 1px solid $white;
+    
+                        &:last-child {
+                            border-right: none;
+                            padding-right: 0px;
+                        }
+    
+                        a {
+                            text-decoration: none;
+                            color: $white;
+                            font-weight: 500;
+                            font-size: 16px;
+                            letter-spacing: 0.105em;
+    
+                            &:hover {
+                                font-weight: 800;
+                                transition: 0.2s;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .odb_footer-copy {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 220%;
+                letter-spacing: 0.02em;
+            }
+    
+            .odb_footer-powered {
+                font-weight: 500;
+                font-size: 10px;
+                letter-spacing: 0.02em;
             }
         }
     }
