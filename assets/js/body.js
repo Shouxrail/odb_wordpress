@@ -2,11 +2,23 @@ $(document).ready(() => {
     //header settings
     var st = $(this).scrollTop();
    if (st == 0){
-        $('#header-1').css('height', '144px');
-        $('#header-2').css('height', '0px');
+        $('#header-1').css({
+            height: '144px',
+            opacity: 1
+        });
+        $('#header-2').css({
+            height: '0px',
+            opacity: 0
+        });
    } else {
-        $('#header-1').css('height', '0px');
-        $('#header-2').css('height', '92px');
+        $('#header-1').css({
+            height: '0px',
+            opacity: 0
+        });
+        $('#header-2').css({
+            height: '92px',
+            opacity: 1
+        });
    }
 
    $("#s").attr("placeholder","SEARCH HERE");
@@ -39,11 +51,23 @@ var lastScrollTop = 0;
 $(window).scroll(function(event){
    var st = $(this).scrollTop();
    if (st == 0){
-       $('#header-1').css('height', '144px');
-       $('#header-2').css('height', '0px');
+        $('#header-1').css({
+            height: '144px',
+            opacity: 1
+        });
+        $('#header-2').css({
+            height: '0px',
+            opacity: 0
+        });
    } else {
-        $('#header-1').css('height', '0px');
-       $('#header-2').css('height', '92px');
+        $('#header-1').css({
+            height: '0px',
+            opacity: 0
+        });
+        $('#header-2').css({
+            height: '92px',
+            opacity: 1
+        });
    }
 });
 
