@@ -16,7 +16,6 @@ get_header(); ?>
 
         <section id="primary" class="site-content col-md-8">
             <h1 class="odb_cat-title"><?php single_cat_title( '', true ); ?></h1>
-            <breadcrumbs><?php echo do_shortcode('[custom_breadcrumbs]'); ?></breadcrumbs>
             <div id="content" role="main">
                 <?php 
 // Check if there are any posts to display
@@ -26,13 +25,16 @@ if ( have_posts() ) : ?>
  
 // The Loop
 while ( have_posts() ) : the_post(); ?>
-                <h2 class="odb_post-title"><a href="<?php the_permalink() ?>" rel="bookmark"
-                        title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-                <small class=""><?php the_time('F jS, Y') ?> by <?php the_author_posts_link() ?></small>
+                <div class="odb_post-container">
 
-                <div class="entry">
+                    <breadcrumbs><?php the_category( ' / ', '', get_the_ID(  ) ) ?></breadcrumbs>
                     <?php the_post_thumbnail(); ?>
-                    <?php the_excerpt(); ?>
+                    <div class="entry">
+                        <h2 class="odb_post-title"><a href="<?php the_permalink() ?>" rel="bookmark"
+                                title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+                        <?php the_excerpt(); ?>
+                    </div>
+                    <small class="odb_post-date"><?php the_time('d F Y') ?> | <?php the_author_posts_link() ?></small>
                 </div>
 
                 <?php endwhile; 

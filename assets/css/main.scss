@@ -3,6 +3,7 @@
 $primaryColor: #762D5A;
 $secondaryColor: #46ffe6;
 $white: #FFFFFF;
+$black: #000000;
 $gray: #909090;
 $lightGray: #C4C4C4;
 $fontFam: 'Raleway', sans-serif !important;
@@ -842,16 +843,112 @@ footer {
     }
 
     .odb_cat-title {
-        border-bottom: 1px solid $lightGray;
         color: $primaryColor;
         font-weight: 800;
         font-size: 48px;
         letter-spacing: 0.33em;
+        margin-bottom: 24px;
     }
 
     .attachment-post-thumbnail {
         width: 100%;
         height: auto;
         object-fit: cover;
+    }
+
+    #content {
+        .odb_post-container {
+            border-top: 1px solid $lightGray;
+            padding-top: 24px;
+            padding-bottom: 70px;
+        }
+
+        img {
+            margin-bottom: 43px;
+        }
+    }
+
+    .entry {
+        .odb_post-title {
+            font-weight: 600;
+            font-size: 36px;
+            letter-spacing: 0.045em;
+            margin-bottom: 30px ;
+    
+            a {
+                text-decoration: none;
+                color: $black;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            letter-spacing: 0.045em;
+            margin-bottom: 30px;
+        }
+
+        .odb_post-date {
+            font-size: 12px;
+            letter-spacing: 0.045em;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.sidebar-area-one {
+    padding: 0px 52px;
+
+    h3 {
+        padding: 15px 23px;
+        background: url('http://orchidee.test/wp-content/uploads/2023/05/GRADIENT.png');
+        background-position: bottom center;
+        background-size: 200%;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.35em;
+    }
+
+    h2 {
+        padding: 18px 23px;
+        background: url('http://orchidee.test/wp-content/uploads/2023/05/GRADIENT.png');
+        background-position: bottom center;
+        background-size: 200%;
+        font-weight: 700;
+        font-size: 21px;
+        letter-spacing: 0.33em;
+        margin-bottom: 50px;
+    }
+
+    .wp-block-latest-posts {
+        padding: 9px 24px;
+
+        li {
+            a {
+                text-decoration: none;
+                font-size: 14px;
+                letter-spacing: 0.11em;
+                color: $black;
+            }
+        }
+    }
+
+    .wp-block-image {
+        padding-bottom: 32px;
+    }
+
+    h4 {
+        margin-bottom: 8px;
+    }
+}
+
+breadcrumbs {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.41em;
+    margin-bottom: 15px;
+
+    a {
+        text-decoration: none;
+        color: $black;
     }
 }

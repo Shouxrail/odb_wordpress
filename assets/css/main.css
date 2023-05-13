@@ -680,15 +680,92 @@ footer .footer-container .odb_footer-right .odb_footer-powered {
   margin-bottom: 60px;
 }
 .odb_category-content .odb_cat-title {
-  border-bottom: 1px solid #C4C4C4;
   color: #762D5A;
   font-weight: 800;
   font-size: 48px;
   letter-spacing: 0.33em;
+  margin-bottom: 24px;
 }
 .odb_category-content .attachment-post-thumbnail {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.odb_category-content #content .odb_post-container {
+  border-top: 1px solid #C4C4C4;
+  padding-top: 24px;
+  padding-bottom: 70px;
+}
+.odb_category-content #content img {
+  margin-bottom: 43px;
+}
+.odb_category-content .entry .odb_post-title {
+  font-weight: 600;
+  font-size: 36px;
+  letter-spacing: 0.045em;
+  margin-bottom: 30px;
+}
+.odb_category-content .entry .odb_post-title a {
+  text-decoration: none;
+  color: #000000;
+}
+.odb_category-content .entry p {
+  font-size: 18px;
+  letter-spacing: 0.045em;
+  margin-bottom: 30px;
+}
+.odb_category-content .entry .odb_post-date {
+  font-size: 12px;
+  letter-spacing: 0.045em;
+  margin-bottom: 30px;
+}
+
+.sidebar-area-one {
+  padding: 0px 52px;
+}
+.sidebar-area-one h3 {
+  padding: 15px 23px;
+  background: url("http://orchidee.test/wp-content/uploads/2023/05/GRADIENT.png");
+  background-position: bottom center;
+  background-size: 200%;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.35em;
+}
+.sidebar-area-one h2 {
+  padding: 18px 23px;
+  background: url("http://orchidee.test/wp-content/uploads/2023/05/GRADIENT.png");
+  background-position: bottom center;
+  background-size: 200%;
+  font-weight: 700;
+  font-size: 21px;
+  letter-spacing: 0.33em;
+  margin-bottom: 50px;
+}
+.sidebar-area-one .wp-block-latest-posts {
+  padding: 9px 24px;
+}
+.sidebar-area-one .wp-block-latest-posts li a {
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.11em;
+  color: #000000;
+}
+.sidebar-area-one .wp-block-image {
+  padding-bottom: 32px;
+}
+.sidebar-area-one h4 {
+  margin-bottom: 8px;
+}
+
+breadcrumbs {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.41em;
+  margin-bottom: 15px;
+}
+breadcrumbs a {
+  text-decoration: none;
+  color: #000000;
 }/*# sourceMappingURL=main.css.map */
