@@ -6,8 +6,8 @@
 get_header(); ?>
 
 <div class="odb_category-content">
-    <img src="<?php if(function_exists('rdv_category_image_url')){ echo rdv_category_image_url();} ?>"
-        alt="<?php single_cat_title( '', true ); ?>" class="odb_category-image" />
+    <img src="<?php if(function_exists('rdv_category_image_url')){ echo rdv_category_image_url();} ?>" alt=""
+        class="odb_category-image" />
 
     <div class="row">
         <sidebar class="col-md-4">
@@ -25,7 +25,7 @@ if ( have_posts() ) : ?>
  
 // The Loop
 while ( have_posts() ) : the_post(); ?>
-                <div class="odb_post-container">
+                <div class="odb_post-array-container">
 
                     <breadcrumbs><?php the_category( ' / ', '', get_the_ID(  ) ) ?></breadcrumbs>
                     <?php the_post_thumbnail(); ?>

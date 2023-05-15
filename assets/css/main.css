@@ -692,8 +692,12 @@ footer .footer-container .odb_footer-right .odb_footer-powered {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.odb_category-content #content .odb_post-container {
+.odb_category-content #content .odb_post-array-container {
   border-top: 1px solid #C4C4C4;
+  padding-top: 24px;
+  padding-bottom: 70px;
+}
+.odb_category-content #content .odb_post-container {
   padding-top: 24px;
   padding-bottom: 70px;
 }

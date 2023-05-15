@@ -857,8 +857,13 @@ footer {
     }
 
     #content {
-        .odb_post-container {
+        .odb_post-array-container {
             border-top: 1px solid $lightGray;
+            padding-top: 24px;
+            padding-bottom: 70px;
+        }
+
+        .odb_post-container {
             padding-top: 24px;
             padding-bottom: 70px;
         }

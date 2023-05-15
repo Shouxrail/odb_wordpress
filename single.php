@@ -9,40 +9,45 @@
  
 get_header(); ?>
 
-<div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
+<div class="odb_category-content">
+    <img src="<?php if(function_exists('rdv_category_image_url')){ echo rdv_category_image_url();} ?>"
+        alt="<?php single_cat_title( '', true ); ?>" class="odb_category-image" />
 
-        <?php
-        // Start the loop.
-        while ( have_posts() ) : the_post();
- 
-            /*
-             * Include the post format-specific template for the content. If you want to
-             * use this in a child theme, then include a file called called content-___.php
-             * (where ___ is the post format) and that will be used instead.
-             */
-            get_template_part( 'content', get_post_format() );
- 
-            // If comments are open or we have at least one comment, load up the comment template.
-            if ( comments_open() || get_comments_number() ) :
-                comments_template();
-            endif;
- 
-            // Previous/next post navigation.
-            the_post_navigation( array(
-                'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'twentyfifteen' ) . '</span> ' .
-                    '<span class="screen-reader-text">' . __( 'Next post:', 'twentyfifteen' ) . '</span> ' .
-                    '<span class="post-title">%title</span>',
-                'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'twentyfifteen' ) . '</span> ' .
-                    '<span class="screen-reader-text">' . __( 'Previous post:', 'twentyfifteen' ) . '</span> ' .
-                    '<span class="post-title">%title</span>',
-            ) );
- 
-        // End the loop.
-        endwhile;
-        ?>
+    <div class="row">
+        <sidebar class="col-md-4">
+        </sidebar>
 
-    </main><!-- .site-main -->
-</div><!-- .content-area -->
+        <section id="primary" class="site-content col-md-8">
+            <h1 class="odb_cat-title"><?php the_title(); ?></h1>
+            <div id="content" role="main">
+                <?php 
+// Check if there are any posts to display
+if ( have_posts() ) : ?>
+
+                <?php
+ 
+// The Loop
+while ( have_posts() ) : the_post(); ?>
+                <div class="odb_post-container">
+
+                    <breadcrumbs><?php the_category( ' / ', '', get_the_ID(  ) ) ?></breadcrumbs>
+                    <?php the_post_thumbnail(); ?>
+                    <div class="entry">
+                        <?php the_content(); ?>
+                    </div>
+                    <small class="odb_post-date"><?php the_time('d F Y') ?> | <?php the_author_posts_link() ?></small>
+                </div>
+
+                <?php endwhile; 
+ 
+else: ?>
+                <p>Sorry, no posts matched your criteria.</p>
+
+
+                <?php endif; ?>
+            </div>
+        </section>
+    </div>
+</div>
 
 <?php get_footer(); ?>
