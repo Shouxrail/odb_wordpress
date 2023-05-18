@@ -42,16 +42,6 @@ function orchidee_theme_support()
 
 add_action( 'after_setup_theme', 'orchidee_theme_support' );
 
-add_filter( 'get_custom_logo', 'change_logo_class' );
-
-function change_logo_class( $html ) {
-
-    // $html = str_replace( 'custom-logo', 'custom-logo col-md-', $html );
-    $html = str_replace( 'custom-logo-link', 'custom-logo-link col-xl-2', $html );
-
-    return $html;
-}
-
 function orchidee_menus()
 {
     $menus = array(

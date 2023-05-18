@@ -28,11 +28,14 @@ body {
             max-width: 1440px;
 
             .custom-logo-link {
-                display: block;
-
                 .custom-logo {
                     max-height: 70px !important;
                     max-width: 225px;
+
+                    @media only screen and (max-width: 600px) {
+                        max-height: 35px !important;
+                        max-width: 112px;
+                    }
                 }
             }
 
@@ -252,19 +255,61 @@ body {
             height: 100% !important;
             align-items: center;
 
-            .custom-logo-link {
-                display: block;
+            @media only screen and (max-width: 600px) {
+                padding: 24px 0px;
+            }
 
+            .custom-logo-link {
                 .custom-logo {
                     max-height: 45px !important;
                     max-width: 125px;
+
+                    @media only screen and (max-width: 600px) {
+                        max-height: 36px !important;
+                        max-width: 112px;
+                    }
                 }
             }
 
+            .odb_nav-menu-mobile {
+                @media only screen and (min-width: 600px) {
+                    display: none;
+                }
+
+                i {
+                    cursor: pointer;
+                
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: 0.2s;
+                    }
+                }
+            }
+
+            .odb_mobile-nav {
+                overflow: hidden;
+                max-height: 0;
+                transition: 0.5s;
+
+                @media only screen and (max-width: 600px) {
+                    background-color: rgba(101, 37, 130, 0.7);
+                    margin-top: 30px;
+                }
+            }
 
             .lang-sosmed {
                 align-items: center;
                 margin: 0px !important;
+
+                ul {
+                    @media only screen and (max-width: 600px) {
+                        float: none;
+                        margin: 0;
+                        padding: 20px 0px;
+                        justify-content: center;
+                        gap: 30px;
+                    }
+                }
 
                 .lang {
                     color: $white;
@@ -287,13 +332,26 @@ body {
             .nav-search {
                 margin-top: 30px;
 
+
                 .navbar-nav {
                         align-items: center;
 
+                        
                         li {
                             text-align: center;
                             padding: 0px 8px;
+                            
+                            @media only screen and (max-width: 600px) {
+                                width: 100%;
+                                padding: 5px 0px;
+                                position: relative;
 
+                                &:hover {
+                                    background-color: $primaryColor;
+                                    transition: 0.2s;
+                                }
+                            }
+                            
                             &:hover > .sub-menu {
                                 max-height: 100px;
                                 transition: 0.5s;
@@ -319,6 +377,18 @@ body {
                                 list-style-type: none;
                                 padding: 0;
                                 min-width: 168px;
+                                z-index: 99999999999;
+
+                                @media only screen and (max-width: 600px) {
+                                    background: rgba(118, 45, 90, 0.7);
+                                    top: 34px;
+                                    width: 100%;
+                                }
+
+                                &:hover {
+                                    max-height: 100px;
+                                    transition: 0.5s;
+                                }
 
                                 li {
                                     text-align: left;
@@ -411,7 +481,6 @@ body {
             background: $primaryColor;
             opacity: 50%;
             mix-blend-mode: multiply;
-            
         }
         .header-bg {
             filter: saturate(2);
@@ -428,6 +497,10 @@ body {
             object-fit: cover;
             object-position: center;
             mix-blend-mode: multiply;
+
+            @media only screen and (max-width: 600px) {
+                opacity: 1;
+            }
         }
     }
 
@@ -956,4 +1029,101 @@ breadcrumbs {
         text-decoration: none;
         color: $black;
     }
+}
+.odb_produk-group {
+    margin: 50px 242px;
+    border-bottom: 1px solid $lightGray;
+
+    @media only screen and (max-width: 600px) {
+        margin: 50px 10px;
+    }
+
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 48px;
+        letter-spacing: 0.33em;
+        margin-bottom: 24px;
+    }
+    
+    .odb_produk-cat {
+        font-size: 11px;
+        letter-spacing: 0.41em;
+    }
+
+    .odb_produk-image {
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .odb_produk-title {
+        font-weight: 600;
+        font-size: 27px;
+        letter-spacing: 0.045em;
+    }
+
+    .odb_produk-text {
+        font-size: 15px;
+        letter-spacing: 0.045em;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: 0.045em;
+    }
+
+    p {
+        font-size: 18px;
+        letter-spacing: 0.045em;
+    }
+}
+
+.odb_about-content-group {
+    padding: 50px 122px;
+
+    @media only screen and (max-width: 600px) {
+        padding: 50px 10px;
+    }
+}
+
+.odb_about-group {
+    margin: 50px 122px;
+
+    @media only screen and (max-width: 600px) {
+        margin: 50px 10px;
+    }
+}
+
+.odb_image-full {
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.odb_form {
+    label {
+        font-weight: 400 !important;
+        font-size: 18px !important; 
+        letter-spacing: 0.045em !important;
+    }
+
+    input, textarea {
+        border: none !important;
+        box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1) !important;
+    }
+}
+
+.odb_form-submit {
+    border-radius: 0 !important;
+    width: 280px !important;
+    font-size: 18px !important;
+    letter-spacing: 0.34em !important;
 }

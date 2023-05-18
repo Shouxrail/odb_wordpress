@@ -17,12 +17,15 @@ body #header-1 .header-container {
   margin: auto;
   max-width: 1440px;
 }
-body #header-1 .header-container .custom-logo-link {
-  display: block;
-}
 body #header-1 .header-container .custom-logo-link .custom-logo {
   max-height: 70px !important;
   max-width: 225px;
+}
+@media only screen and (max-width: 600px) {
+  body #header-1 .header-container .custom-logo-link .custom-logo {
+    max-height: 35px !important;
+    max-width: 112px;
+  }
 }
 body #header-1 .header-container .right .lang-sosmed {
   margin: 0px !important;
@@ -202,16 +205,56 @@ body #header-2 .header-container {
   height: 100% !important;
   align-items: center;
 }
-body #header-2 .header-container .custom-logo-link {
-  display: block;
+@media only screen and (max-width: 600px) {
+  body #header-2 .header-container {
+    padding: 24px 0px;
+  }
 }
 body #header-2 .header-container .custom-logo-link .custom-logo {
   max-height: 45px !important;
   max-width: 125px;
 }
+@media only screen and (max-width: 600px) {
+  body #header-2 .header-container .custom-logo-link .custom-logo {
+    max-height: 36px !important;
+    max-width: 112px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  body #header-2 .header-container .odb_nav-menu-mobile {
+    display: none;
+  }
+}
+body #header-2 .header-container .odb_nav-menu-mobile i {
+  cursor: pointer;
+}
+body #header-2 .header-container .odb_nav-menu-mobile i:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+body #header-2 .header-container .odb_mobile-nav {
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.5s;
+}
+@media only screen and (max-width: 600px) {
+  body #header-2 .header-container .odb_mobile-nav {
+    background-color: rgba(101, 37, 130, 0.7);
+    margin-top: 30px;
+  }
+}
 body #header-2 .header-container .lang-sosmed {
   align-items: center;
   margin: 0px !important;
+}
+@media only screen and (max-width: 600px) {
+  body #header-2 .header-container .lang-sosmed ul {
+    float: none;
+    margin: 0;
+    padding: 20px 0px;
+    justify-content: center;
+    gap: 30px;
+  }
 }
 body #header-2 .header-container .lang-sosmed .lang {
   color: #FFFFFF;
@@ -235,6 +278,17 @@ body #header-2 .header-container .nav-search .navbar-nav li {
   text-align: center;
   padding: 0px 8px;
 }
+@media only screen and (max-width: 600px) {
+  body #header-2 .header-container .nav-search .navbar-nav li {
+    width: 100%;
+    padding: 5px 0px;
+    position: relative;
+  }
+  body #header-2 .header-container .nav-search .navbar-nav li:hover {
+    background-color: #762D5A;
+    transition: 0.2s;
+  }
+}
 body #header-2 .header-container .nav-search .navbar-nav li:hover > .sub-menu {
   max-height: 100px;
   transition: 0.5s;
@@ -257,6 +311,18 @@ body #header-2 .header-container .nav-search .navbar-nav li .sub-menu {
   list-style-type: none;
   padding: 0;
   min-width: 168px;
+  z-index: 99999999999;
+}
+@media only screen and (max-width: 600px) {
+  body #header-2 .header-container .nav-search .navbar-nav li .sub-menu {
+    background: rgba(118, 45, 90, 0.7);
+    top: 34px;
+    width: 100%;
+  }
+}
+body #header-2 .header-container .nav-search .navbar-nav li .sub-menu:hover {
+  max-height: 100px;
+  transition: 0.5s;
 }
 body #header-2 .header-container .nav-search .navbar-nav li .sub-menu li {
   text-align: left;
@@ -345,6 +411,11 @@ body #header-2 .header-bg {
   -o-object-position: center;
      object-position: center;
   mix-blend-mode: multiply;
+}
+@media only screen and (max-width: 600px) {
+  body #header-2 .header-bg {
+    opacity: 1;
+  }
 }
 body content {
   display: block;
@@ -772,4 +843,91 @@ breadcrumbs {
 breadcrumbs a {
   text-decoration: none;
   color: #000000;
+}
+
+.odb_produk-group {
+  margin: 50px 242px;
+  border-bottom: 1px solid #C4C4C4;
+}
+@media only screen and (max-width: 600px) {
+  .odb_produk-group {
+    margin: 50px 10px;
+  }
+}
+.odb_produk-group:last-child {
+  border-bottom: none;
+}
+.odb_produk-group h2 {
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: 0.33em;
+  margin-bottom: 24px;
+}
+.odb_produk-group .odb_produk-cat {
+  font-size: 11px;
+  letter-spacing: 0.41em;
+}
+.odb_produk-group .odb_produk-image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.odb_produk-group .odb_produk-title {
+  font-weight: 600;
+  font-size: 27px;
+  letter-spacing: 0.045em;
+}
+.odb_produk-group .odb_produk-text {
+  font-size: 15px;
+  letter-spacing: 0.045em;
+}
+.odb_produk-group h3 {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.045em;
+}
+.odb_produk-group p {
+  font-size: 18px;
+  letter-spacing: 0.045em;
+}
+
+.odb_about-content-group {
+  padding: 50px 122px;
+}
+@media only screen and (max-width: 600px) {
+  .odb_about-content-group {
+    padding: 50px 10px;
+  }
+}
+
+.odb_about-group {
+  margin: 50px 122px;
+}
+@media only screen and (max-width: 600px) {
+  .odb_about-group {
+    margin: 50px 10px;
+  }
+}
+
+.odb_image-full img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.odb_form label {
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  letter-spacing: 0.045em !important;
+}
+.odb_form input, .odb_form textarea {
+  border: none !important;
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1) !important;
+}
+
+.odb_form-submit {
+  border-radius: 0 !important;
+  width: 280px !important;
+  font-size: 18px !important;
+  letter-spacing: 0.34em !important;
 }/*# sourceMappingURL=main.css.map */

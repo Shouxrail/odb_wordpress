@@ -22,12 +22,14 @@
 
     <header id="header-1">
         <div class="header-container row">
-            <?php
-                if ( function_exists( 'the_custom_logo' ) ) {
-                    the_custom_logo();
-                }
-            ?>
-            <div class="right col-xl-10">
+            <div class="custom-logo-link col-xl-2 col-sm-6">
+                <?php
+                    if ( function_exists( 'the_custom_logo' ) ) {
+                        the_custom_logo();
+                    }
+                ?>
+            </div>
+            <div class="right col-xl-10 col-sm-6">
                 <?php dynamic_sidebar( 'header_area_one' ); ?>
                 <div class="nav-search row">
                     <?php
@@ -55,15 +57,19 @@
 
     <header id="header-2">
         <div class="header-container row">
-            <div class="col-xl-1">
+            <div class="col-xl-1 col-6">
                 <?php
                     if ( function_exists( 'the_custom_logo' ) ) {
                         the_custom_logo();
                     }
                 ?>
             </div>
-            <div class="nav-search col-xl-8">
-                <?php
+            <div class="odb_nav-menu-mobile col-6 text-end">
+                <i class="fa-sharp fa-solid fa-bars fa-2xl" style="color: #ffffff;" onclick="toggleMobileNavMenu()"></i>
+            </div>
+            <div class="odb_mobile-nav" id="odb_mobile-nav">
+                <div class="nav-search col-xl-8">
+                    <?php
 
                 wp_nav_menu( array(
                     'menu' => 'primary',
@@ -73,9 +79,10 @@
                 ) );
 
                 ?>
-            </div>
-            <div class="lang-sosmed row col-xl-3">
-                <?php dynamic_sidebar( 'header_area_two' ); ?>
+                </div>
+                <div class="lang-sosmed row col-xl-3">
+                    <?php dynamic_sidebar( 'header_area_two' ); ?>
+                </div>
             </div>
         </div>
         <div class="header-bg-container"></div>

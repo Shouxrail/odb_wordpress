@@ -1,25 +1,6 @@
 $(document).ready(() => {
     //header settings
-    var st = $(this).scrollTop();
-   if (st == 0){
-        $('#header-1').css({
-            height: '144px',
-            opacity: 1
-        });
-        $('#header-2').css({
-            height: '0px',
-            opacity: 0
-        });
-   } else {
-        $('#header-1').css({
-            height: '0px',
-            opacity: 0
-        });
-        $('#header-2').css({
-            height: '92px',
-            opacity: 1
-        });
-   }
+    headerToggle();
 
    $("#s").attr("placeholder","SEARCH HERE");
     $("#searchsubmit").hide();
@@ -49,26 +30,7 @@ $(document).ready(() => {
 
 var lastScrollTop = 0;
 $(window).scroll(function(event){
-   var st = $(this).scrollTop();
-   if (st == 0){
-        $('#header-1').css({
-            height: '144px',
-            opacity: 1
-        });
-        $('#header-2').css({
-            height: '0px',
-            opacity: 0
-        });
-   } else {
-        $('#header-1').css({
-            height: '0px',
-            opacity: 0
-        });
-        $('#header-2').css({
-            height: '92px',
-            opacity: 1
-        });
-   }
+   headerToggle();
 });
 
 function backToTop() {
@@ -81,4 +43,57 @@ function backToTop() {
     });
     
     $("html, body").animate({scrollTop: 0}, 1000);
+}
+
+function headerToggle() {
+    var st = $(this).scrollTop();
+    if (window.matchMedia('(max-width: 600px)').matches) {
+        if (st == 0){
+            $('#header-1').css({
+                height: '0px',
+                opacity: 0
+            });
+            $('#header-2').css({
+                height: '90px',
+                opacity: 1
+            });
+       } else {
+            $('#header-1').css({
+                height: '0px',
+                opacity: 0
+            });
+            $('#header-2').css({
+                height: '90px',
+                opacity: 1
+            });
+       }
+    } else {
+        if (st == 0){
+             $('#header-1').css({
+                 height: '144px',
+                 opacity: 1
+             });
+             $('#header-2').css({
+                 height: '0px',
+                 opacity: 0
+             });
+        } else {
+             $('#header-1').css({
+                 height: '0px',
+                 opacity: 0
+             });
+             $('#header-2').css({
+                 height: '92px',
+                 opacity: 1
+             });
+        }
+    }
+}
+
+function toggleMobileNavMenu() {
+    if ($('#odb_mobile-nav').height() == 0) {
+        $('#odb_mobile-nav').css('max-height', 500);
+    } else {
+        $('#odb_mobile-nav').css('max-height', 0);
+    }
 }
