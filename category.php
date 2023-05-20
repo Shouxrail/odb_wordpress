@@ -9,7 +9,7 @@ get_header(); ?>
     <img src="<?php if(function_exists('rdv_category_image_url')){ echo rdv_category_image_url();} ?>" alt=""
         class="odb_category-image" />
 
-    <div class="row">
+    <div class="row flex-column-reverse flex-md-row">
         <sidebar class="col-md-4">
             <?php dynamic_sidebar( 'sidebar_area_one' ); ?>
         </sidebar>

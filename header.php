@@ -57,7 +57,7 @@
 
     <header id="header-2">
         <div class="header-container row">
-            <div class="col-xl-1 col-6">
+            <div class="col-md-1 col-6">
                 <?php
                     if ( function_exists( 'the_custom_logo' ) ) {
                         the_custom_logo();
@@ -67,8 +67,8 @@
             <div class="odb_nav-menu-mobile col-6 text-end">
                 <i class="fa-sharp fa-solid fa-bars fa-2xl" style="color: #ffffff;" onclick="toggleMobileNavMenu()"></i>
             </div>
-            <div class="odb_mobile-nav" id="odb_mobile-nav">
-                <div class="nav-search col-xl-8">
+            <div class="odb_mobile-nav col-md-11 row" id="odb_mobile-nav">
+                <div class="nav-search col-md-9">
                     <?php
 
                 wp_nav_menu( array(
@@ -80,7 +80,7 @@
 
                 ?>
                 </div>
-                <div class="lang-sosmed row col-xl-3">
+                <div class="lang-sosmed row col-md-3">
                     <?php dynamic_sidebar( 'header_area_two' ); ?>
                 </div>
             </div>

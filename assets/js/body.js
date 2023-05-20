@@ -26,9 +26,18 @@ $(document).ready(() => {
         $(v).removeClass('disabled');
         $(v).children().click(() => $(v).removeClass('disabled'));
     }); 
+
+    $('.odb_nav-submenu-toggle').map((i, v) => {
+        $(v).click(() => {
+            if ($(v).children('ul.sub-menu').height() > 0) {
+                $(v).children('ul.sub-menu').css('max-height', '0px');
+            } else {
+                $(v).children('ul.sub-menu').css('max-height', '100px');
+            }
+        });
+    });
 });
 
-var lastScrollTop = 0;
 $(window).scroll(function(event){
    headerToggle();
 });
@@ -51,7 +60,8 @@ function headerToggle() {
         if (st == 0){
             $('#header-1').css({
                 height: '0px',
-                opacity: 0
+                opacity: 0,
+                display: 'none'
             });
             $('#header-2').css({
                 height: '90px',
@@ -60,7 +70,8 @@ function headerToggle() {
        } else {
             $('#header-1').css({
                 height: '0px',
-                opacity: 0
+                opacity: 0,
+                display: 'none'
             });
             $('#header-2').css({
                 height: '90px',

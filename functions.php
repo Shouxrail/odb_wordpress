@@ -67,7 +67,7 @@ add_action( 'wp_enqueue_scripts', 'orchidee_reqister_styles' );
 function orchidee_reqister_scripts()
 {
     $style_version = wp_get_theme()->get('Version');
-    wp_enqueue_script( 'orchidee_jquery', "https://code.jquery.com/jquery-3.6.4.min.js", array(), '3.6.4', true );
+    wp_enqueue_script( 'orchidee_jquery', "https://code.jquery.com/jquery-3.6.4.min.js", array(), '3.6.4', false );
     wp_enqueue_script( 'orchidee_bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js", array(), '5.0.2', true );
     // wp_enqueue_script( 'orchidee_fontawesome', "https://use.fontawesome.com/releases/v5.15.4/js/all.js", array(), '5.15.4', false ); 
     wp_enqueue_script( 'orchidee_main', get_template_directory_uri() . "/assets/js/main.js", array(), $style_version, true );
@@ -353,6 +353,50 @@ function get_breadcrumb() {
         echo '</em>"';
     }
 }
+
+function load_more_posts_callback() {
+    $category = isset($_POST['category']) ? $_POST['category'] : '';
+    $page = isset($_POST['page']) ? $_POST['page'] : 1;
+
+    $args = array(
+        'cat' => $category,
+        'paged' => $page,
+        'posts_per_page' => 6,   // Set the number of posts to load each time
+    );
+
+    $query = new WP_Query($args);
+    $posts = '';
+
+    if ($query->have_posts()) {
+        while ($query->have_posts()) {
+            $query->the_post();
+            ob_start(); ?>
+
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <div class="entry-header">
+        <?php the_post_thumbnail( ) ?>
+        <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+    </div>
+
+    <div class="entry-content">
+        <?php the_excerpt(); ?>
+    </div>
+</article>
+
+<?php
+            $posts .= ob_get_clean();
+        }
+
+        wp_reset_postdata();
+
+        wp_send_json_success($posts);
+    } else {
+        wp_send_json_success($posts);
+    }
+}
+
+add_action('wp_ajax_load_more_posts', 'load_more_posts_callback');
+add_action('wp_ajax_nopriv_load_more_posts', 'load_more_posts_callback');
 
 
 ?>
