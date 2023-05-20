@@ -372,7 +372,7 @@ function load_more_posts_callback() {
             $query->the_post();
             ob_start(); ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" class="col-md-4">
     <div class="entry-header">
         <?php the_post_thumbnail( ) ?>
         <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
