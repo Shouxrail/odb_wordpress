@@ -2,6 +2,7 @@
 
 $primaryColor: #762D5A;
 $secondaryColor: #46ffe6;
+$secondaryColor2: #5CBCB8;
 $white: #FFFFFF;
 $black: #000000;
 $gray: #909090;
@@ -34,7 +35,7 @@ html, body {
                     max-height: 70px !important;
                     max-width: 225px;
 
-                    @media only screen and (max-width: 600px) {
+                    @media only screen and (max-width: 576px) {
                         max-height: 35px !important;
                         max-width: 112px;
                     }
@@ -66,6 +67,7 @@ html, body {
                 .nav-search {
                     .navbar-nav {
                         align-items: center;
+                        cursor: pointer !important;
 
                         li {
                             text-align: center;
@@ -253,7 +255,7 @@ html, body {
             height: 100% !important;
             align-items: center;
 
-            @media only screen and (max-width: 600px) {
+            @media only screen and (max-width: 576px) {
                 padding: 24px 0px;
             }
 
@@ -262,7 +264,7 @@ html, body {
                     max-height: 45px !important;
                     max-width: 125px;
 
-                    @media only screen and (max-width: 600px) {
+                    @media only screen and (max-width: 576px) {
                         max-height: 36px !important;
                         max-width: 112px;
                     }
@@ -270,7 +272,7 @@ html, body {
             }
 
             .odb_nav-menu-mobile {
-                @media only screen and (min-width: 600px) {
+                @media only screen and (min-width: 576px) {
                     display: none;
                 }
 
@@ -285,7 +287,7 @@ html, body {
             }
 
             .odb_mobile-nav {            
-                @media only screen and (max-width: 600px) {
+                @media only screen and (max-width: 576px) {
                     overflow: hidden;
                     max-height: 0;
                     transition: 0.5s;
@@ -300,7 +302,7 @@ html, body {
                 margin: 0px !important;
 
                 ul {
-                    @media only screen and (max-width: 600px) {
+                    @media only screen and (max-width: 576px) {
                         float: none;
                         margin: 0;
                         padding: 20px 0px;
@@ -332,6 +334,7 @@ html, body {
 
 
                 .navbar-nav {
+                        cursor: pointer !important;
                         align-items: center;
 
                         
@@ -339,7 +342,7 @@ html, body {
                             text-align: center;
                             padding: 0px 8px;
                             
-                            @media only screen and (max-width: 600px) {
+                            @media only screen and (max-width: 576px) {
                                 width: 100%;
                                 padding: 5px 0px;
                                 position: relative;
@@ -373,7 +376,7 @@ html, body {
                                 min-width: 168px;
                                 z-index: 99999999999;
 
-                                @media only screen and (max-width: 600px) {
+                                @media only screen and (max-width: 576px) {
                                     background: rgba(118, 45, 90, 0.7);
                                     top: 34px;
                                     width: 100%;
@@ -492,7 +495,7 @@ html, body {
             object-position: center;
             mix-blend-mode: multiply;
 
-            @media only screen and (max-width: 600px) {
+            @media only screen and (max-width: 576px) {
                 opacity: 1;
             }
         }
@@ -562,37 +565,162 @@ html, body {
 // }
 
 .odb_beranda-content1-container {
-    .carousel-slider__caption {
-        .caption {
-            font-weight: 500 !important;
-            font-size: 20px !important;
-            text-align: center !important;
-            letter-spacing: 0.03em !important;
+    .owl-stage {
+        @media only screen and (max-width: 576px) {
+            display: flex;
+            gap: 7px;
+        }
+        
+        .owl-item {
+            @media only screen and (max-width: 576px) {
+                margin-right: 0px !important;
+                flex: 1;
+                height: 100%;
+            }
+    
+            .carousel-slider__item {
+                @media only screen and (max-width: 576px) {
+                    border-radius: 5px;
+                    overflow: hidden;
+                    background: $primaryColor;
+                    min-height: 172px;
+
+                    &:hover {
+                        background: $secondaryColor2;
+                        transition: 0.2s;
+                    }
+                }
+        
+                a {
+                    text-decoration: none;
+                    
+                    .carousel-slider__caption {
+                        padding: 10px 14px;
+
+                        .title {
+                            margin-top: 0px;
+                            font-weight: 500 !important;
+                            font-size: 20px !important;
+                            text-align: center !important;
+                            letter-spacing: 0.03em !important;
+                            color: $black;
+        
+                            @media only screen and (max-width: 576px) {
+                                color: $white;
+                                font-size: 11px !important;
+                                letter-spacing: 0.025em !important;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
+.carousel-slider-nav-icon {
+    color: $primaryColor;    
+}
+
 .odb_beranda-content2-container {
-    .carousel-slider__item {
-        img {
-            @media only screen and (max-width: 600px) {
-                width: 100% !important;
+    .owl-stage {
+        gap: 7px;
+
+        .owl-item {
+            @media only screen and (max-width: 576px) {
+                margin-right: 0px !important;
+                flex: 1;
             }
-            
-            .carousel-slider__caption {
-                max-width: 225px;
-                margin: auto;
-                margin-top: 36px;
+    
+            .carousel-slider__post {
+                box-shadow: none;
         
-                .title {
-                    font-weight: 700 !important;
-                    font-size: 16px !important;
-                    letter-spacing: 20% !important;
+                @media only screen and (max-width: 576px) {
+                    border-radius: 5px;
+                    overflow: hidden;
+                    background: $primaryColor;
+                    min-height: 172px;
+        
+                    &:hover {
+                        background: $secondaryColor2;
+                        transition: 0.2s;
+                    }
                 }
         
-                .caption {
-                    font-size: 16px !important;
-                    letter-spacing: 10% !important;
+                .carousel-slider__post-content {
+                    @media only screen and (max-width: 576px) {
+                        margin: 0px !important;
+                        padding: 0px !important;
+                    }
+        
+                    .carousel-slider__post-header {
+                        .carousel-slider__post-image {
+                            height: 318px;
+        
+                            @media only screen and (max-width: 576px) {
+                                height: 132px;
+                            }
+                        }
+        
+                        .carousel-slider__post-title {
+                            display: block;
+                            margin: 0;
+                            margin-top: 36px;
+                            padding: 0px 25px; 
+                            text-decoration: none;
+                            height: 30px;
+        
+                            @media only screen and (max-width: 576px) {
+                                margin: 0px !important;
+                                padding: 10px 14px !important;
+                                height: auto;
+                                min-height: auto;
+                            }
+            
+                            h2 {
+                                font-weight: 700 !important;
+                                font-size: 16px !important;
+                                letter-spacing: 20% !important;
+                                text-align: center;
+                                word-break: break-all;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                color: $black;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 2; /* number of lines to show */
+                                line-clamp: 2; 
+                                -webkit-box-orient: vertical;
+                                
+                                @media only screen and (max-width: 576px) {
+                                    margin: 0px !important;
+                                    font-size: 11px !important;
+                                    letter-spacing: 0.025em !important;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+            
+                    .carousel-slider__post-excerpt {
+                        margin: 0;
+                        padding: 0px 25px; 
+                        font-size: 16px !important;
+                        letter-spacing: 0.1em !important;
+                        text-align: center;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2; /* number of lines to show */
+                                line-clamp: 2; 
+                        -webkit-box-orient: vertical;
+        
+                        @media only screen and (max-width: 576px) {
+                            display: none;
+                        }
+                    }
+                }
+                .carousel-slider__post-meta {
+                    display: none;
                 }
             }
         }
@@ -600,19 +728,15 @@ html, body {
 }
 
 .odb_beranda-content3-container {
-    .owl-nav {
-        display: block !important;
-
-        button {
-            display: block !important;
-            background: unset !important;
-        }
-
-        .owl-prev {
-            background-color: unset !important;
-        }
-    }
     .owl-item {
+        text-align: center;
+
+        .sa_hover_container {
+            @media only screen and (max-width: 576px) {
+                padding: 0px 30px !important;
+            }
+        }
+
         img {
             // max-width: 250px !important;
             max-height: 250px;
@@ -631,9 +755,30 @@ html, body {
             letter-spacing: 10% !important;
         }
     }
+
+    .white .sa_owl_theme .owl-nav {
+        @media only screen and (max-width: 576px) {
+            display: none !important;
+        }
+
+        .owl-prev, .owl-next {
+            background-color: $primaryColor !important;
+            opacity: 0.7;
+
+            &:hover {
+                background-color: $primaryColor !important;
+                opacity: 1;
+                transition: 0.2s;
+            }
+        }
+    }
 }
 
 .odb_beranda-content4-container {
+    @media only screen and (max-width: 576px) {
+        display: none;
+    }
+
     .eapps-instagram-feed-posts-item-template-classic {
         border: none !important;
 
@@ -643,6 +788,12 @@ html, body {
             font-size: 18px;
             letter-spacing: 0.005em;
         }
+    }
+}
+
+.odb_beranda-content5-container {
+    @media only screen and (max-width: 576px) {
+        display: none;
     }
 }
 
@@ -656,8 +807,8 @@ html, body {
     margin: auto;
     overflow: hidden;
 
-    @media only screen and (max-width: 600px) {
-        padding: 50px 10px;
+    @media only screen and (max-width: 576px) {
+        padding: 50px 6px;
     }
 
     .odb_content2-container {
@@ -777,6 +928,9 @@ html, body {
     }
 
     .odb_content5-container {
+        @media only screen and (max-width: 576px) {
+            display: none;
+        }
 
         .odb_content5-highlight-container {
             text-align: center;
@@ -818,15 +972,15 @@ html, body {
     }
 }
 
-footer {
+.footer {
     position: relative;
     background: url('http://orchidee.test/wp-content/uploads/2023/05/GRADIENT.png');
     background-position: center;
     background-size: cover;
     padding: 27px 60px 60px 60px;
 
-    @media only screen and (max-width: 600px) {
-        padding: 10px;
+    @media only screen and (max-width: 576px) {
+        padding: 6px;
     }
 
     .footer-container {
@@ -873,18 +1027,18 @@ footer {
 
             
             nav {
-                @media only screen and (max-width: 600px) {
+                @media only screen and (max-width: 576px) {
                     text-align: left;
                 }
 
                 ul {
                     list-style-type: none;
                     
-                    @media only screen and (max-width: 600px) {
+                    @media only screen and (max-width: 576px) {
                         padding-left: 24px;
                     }
                     
-                    @media only screen and (min-width: 600px) {
+                    @media only screen and (min-width: 576px) {
                         display: flex;
                         justify-content: end;
                     }
@@ -893,7 +1047,7 @@ footer {
                         padding: 0px 10px;
                         border-right: 1px solid $white;
 
-                        @media only screen and (max-width: 600px) {
+                        @media only screen and (max-width: 576px) {
                             padding: 5px 0px;
                             border-right: none;
                         }
@@ -941,7 +1095,7 @@ footer {
     margin: auto;
     overflow: hidden;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 576px) {
         padding-top: 90px;
     }
 
@@ -969,7 +1123,7 @@ footer {
     }
 
     .site-content {
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 576px) {
             padding: 20px;
         }
     }
@@ -1021,7 +1175,7 @@ footer {
 .sidebar-area-one {
     padding: 0px 52px;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 576px) {
         padding: 10px;
     }
 
@@ -1083,7 +1237,7 @@ breadcrumbs {
     margin: 50px 242px;
     border-bottom: 1px solid $lightGray;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 576px) {
         margin: 50px 10px;
     }
 
@@ -1137,16 +1291,16 @@ breadcrumbs {
 .odb_about-content-group {
     padding: 50px 122px;
 
-    @media only screen and (max-width: 600px) {
-        padding: 50px 10px;
+    @media only screen and (max-width: 576px) {
+        padding: 50px 6px;
     }
 }
 
 .odb_about-group {
     margin: 50px 122px;
 
-    @media only screen and (max-width: 600px) {
-        margin: 50px 10px;
+    @media only screen and (max-width: 576px) {
+        margin: 50px 6px;
     }
 }
 
@@ -1178,7 +1332,7 @@ breadcrumbs {
 }
 
 .odb_desktop-only {
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 576px) {
         display: none;
     }
 }
@@ -1216,8 +1370,8 @@ breadcrumbs {
     main {
         padding: 0px 122px;
 
-        @media only screen and (max-width: 600px) {
-            padding: 0px 10px;
+        @media only screen and (max-width: 576px) {
+            padding: 0px 6px;
         }
         
         .odb_cat-blog-recent {
@@ -1285,12 +1439,12 @@ breadcrumbs {
                     border-top: 1px solid $lightGray;
 
                     &:first-child {
-                        @media only screen and (min-width: 600px) {
+                        @media only screen and (min-width: 576px) {
                             border-top: none;
                             padding-top: 0px;
                         }
 
-                        @media only screen and (max-width: 600px) {
+                        @media only screen and (max-width: 576px) {
                             margin-top: 26px;
                         }
                     }
