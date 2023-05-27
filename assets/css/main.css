@@ -1483,4 +1483,7 @@ breadcrumbs a {
   border-bottom: 1px solid #C4C4C4;
   padding: 12px 0px;
   text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.33em;
 }/*# sourceMappingURL=main.css.map */

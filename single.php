@@ -34,12 +34,12 @@
 <div class="odb_category-content odb_category-content-blog odb_category-content-blog-single">
     <main id="main" class="site-main" role="main">
         <div class="odb_cat-blog-recent">
-            <div class="page-header">
-                <h1 class="page-title">RECENT POST</h1>
-            </div>
             <?php $post_id = ''; ?>
             <div class="row">
                 <div class="odb_cat-blog-last col-md-8">
+                    <div class="page-header">
+                        <h1 class="page-title">RECENT POST</h1>
+                    </div>
                     <?php if ( have_posts() ) : ?>
                     <?php while ( have_posts() ) : the_post(); ?>
                     <?php $post_id = get_the_ID(  ); ?>
