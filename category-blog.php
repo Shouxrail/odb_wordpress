@@ -5,13 +5,12 @@
         class="odb_category-image" />
     <main id="main" class="site-main" role="main">
         <?php
-        $args = array(
+        $query = new WP_Query(array(
             'post_type' => 'post',    // Change 'post' to your desired post type
             'cat' => 'blog',
+            'category__in' => 34,
             'posts_per_page' => 1,    // Set the number of posts you want to display
-        );
-        
-        $query = new WP_Query($args);
+        ));
         ?>
         <div class="odb_cat-blog-recent">
             <div class="page-header">
@@ -39,14 +38,13 @@
                     <?php endwhile; ?>
                 </div>
                 <?php
-                $args = array(
+                $query = new WP_Query(array(
                     'post_type' => 'post',    // Change 'post' to your desired post type
                     'cat' => 'blog',
+                    'category__in' => 34,
                     'posts_per_page' => 2,    // Set the number of posts you want to display
                     'offset' => 1
-                );
-                
-                $query = new WP_Query($args);
+                ));
                 ?>
                 <div class="odb_cat-blog-sidebar col-md-4">
                     <?php while ($query->have_posts()) : $query->the_post(); ?>
@@ -70,14 +68,13 @@
             </div>
         </div>
         <?php
-        $args = array(
+        $query = new WP_Query(array(
             'post_type' => 'post',    // Change 'post' to your desired post type
             'cat' => 'blog',
+            'category__in' => 34,
             'posts_per_page' => 6,    // Set the number of posts you want to display
             'offset' => 3, // Skip the three latest posts
-        );
-        
-        $query = new WP_Query($args);
+        ));
         ?>
 
         <div class="odb_cat-blog-archive">
