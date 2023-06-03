@@ -45,6 +45,7 @@ html, body {
             .right {
                 .lang-sosmed {
                     margin: 0px !important;
+                    padding: 0px !important;
 
                     .lang {
                         color: $white;
@@ -213,7 +214,7 @@ html, body {
         }
         .header-bg {
             filter: saturate(2);
-            background: url('http://orchidee.test/wp-content/uploads/2023/05/GRADIENT.png');
+            background: url('http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png');
             background-position: center;
             background-size: cover;
             position: absolute;
@@ -229,7 +230,7 @@ html, body {
         }
         .header-bg2 {
             position: absolute;
-            background: url('http://orchidee.test/wp-content/uploads/2023/05/GRADIENT.png');
+            background: url('http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png');
             background-position: center;
             background-size: cover;
             z-index: -3;
@@ -255,7 +256,7 @@ html, body {
             height: 100% !important;
             align-items: center;
 
-            @media only screen and (max-width: 576px) {
+            @media only screen and (max-width: 1060px) {
                 padding: 24px 0px;
             }
 
@@ -264,7 +265,7 @@ html, body {
                     max-height: 45px !important;
                     max-width: 125px;
 
-                    @media only screen and (max-width: 576px) {
+                    @media only screen and (max-width: 1060px) {
                         max-height: 36px !important;
                         max-width: 112px;
                     }
@@ -272,7 +273,7 @@ html, body {
             }
 
             .odb_nav-menu-mobile {
-                @media only screen and (min-width: 576px) {
+                @media only screen and (min-width: 1060px) {
                     display: none;
                 }
 
@@ -287,7 +288,7 @@ html, body {
             }
 
             .odb_mobile-nav {            
-                @media only screen and (max-width: 576px) {
+                @media only screen and (max-width: 1060px) {
                     overflow: hidden;
                     max-height: 0;
                     transition: 0.5s;
@@ -300,11 +301,18 @@ html, body {
             .lang-sosmed {
                 align-items: center;
                 margin: 0px !important;
+                padding: 0px !important;
+
+                .header-area {
+                    margin: 0px !important;
+                    padding: 0px !important;
+                }
 
                 ul {
-                    @media only screen and (max-width: 576px) {
+                    margin: 0;
+
+                    @media only screen and (max-width: 1060px) {
                         float: none;
-                        margin: 0;
                         padding: 20px 0px;
                         justify-content: center;
                         gap: 30px;
@@ -342,7 +350,7 @@ html, body {
                             text-align: center;
                             padding: 0px 8px;
                             
-                            @media only screen and (max-width: 576px) {
+                            @media only screen and (max-width: 1060px) {
                                 width: 100%;
                                 padding: 5px 0px;
                                 position: relative;
@@ -376,7 +384,7 @@ html, body {
                                 min-width: 168px;
                                 z-index: 99999999999;
 
-                                @media only screen and (max-width: 576px) {
+                                @media only screen and (max-width: 1060px) {
                                     background: rgba(118, 45, 90, 0.7);
                                     top: 34px;
                                     width: 100%;
@@ -479,9 +487,10 @@ html, body {
             opacity: 50%;
             mix-blend-mode: multiply;
         }
+
         .header-bg {
             filter: saturate(2);
-            background: url('http://orchidee.test/wp-content/uploads/2023/05/GRADIENT.png');
+            background: url('http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png');
             background-position: center;
             background-size: cover;
             position: absolute;
@@ -1056,7 +1065,7 @@ html, body {
 
 .footer {
     position: relative;
-    background: url('http://orchidee.test/wp-content/uploads/2023/05/GRADIENT.png');
+    background: url('http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png');
     background-position: center;
     background-size: cover;
     padding: 27px 60px 60px 60px;
@@ -1271,7 +1280,7 @@ html, body {
 
     h3 {
         padding: 15px 23px;
-        background: url('http://orchidee.test/wp-content/uploads/2023/05/GRADIENT.png');
+        background: url('http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png');
         background-position: bottom center;
         background-size: 200%;
         font-weight: 700;
@@ -1281,7 +1290,7 @@ html, body {
 
     h2 {
         padding: 18px 23px;
-        background: url('http://orchidee.test/wp-content/uploads/2023/05/GRADIENT.png');
+        background: url('http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png');
         background-position: bottom center;
         background-size: 200%;
         font-weight: 700;
@@ -1290,7 +1299,7 @@ html, body {
         margin-bottom: 50px;
     }
 
-    .wp-block-latest-posts {
+    .wp-block-laco.id-posts {
         padding: 9px 24px;
 
         li {
@@ -1317,7 +1326,7 @@ html, body {
         margin-bottom: 72px !important;
         text-align: center !important;
 
-        .wp-block-latest-posts__featured-image {
+        .wp-block-laco.id-posts__featured-image {
             margin-bottom: 32px !important;
 
             img {
@@ -1325,7 +1334,7 @@ html, body {
             }
         }
 
-        .wp-block-latest-posts__post-title {
+        .wp-block-laco.id-posts__post-title {
             font-weight: 700 !important;
             font-size: 24px !important;
             line-height: 28px !important;
@@ -1334,7 +1343,7 @@ html, body {
             margin-bottom: 8px !important;
         }
 
-        .wp-block-latest-posts__post-excerpt {
+        .wp-block-laco.id-posts__post-excerpt {
             font-weight: 600 !important;
             font-size: 14px !important;
             letter-spacing: 0.045em !important;

@@ -30,6 +30,7 @@ html #header-1 .header-container .custom-logo-link .custom-logo, body #header-1 
 }
 html #header-1 .header-container .right .lang-sosmed, body #header-1 .header-container .right .lang-sosmed {
   margin: 0px !important;
+  padding: 0px !important;
 }
 html #header-1 .header-container .right .lang-sosmed .lang, body #header-1 .header-container .right .lang-sosmed .lang {
   color: #FFFFFF;
@@ -160,7 +161,7 @@ html #header-1 .header-bg-container, body #header-1 .header-bg-container {
 }
 html #header-1 .header-bg, body #header-1 .header-bg {
   filter: saturate(2);
-  background: url("http://orchidee.test/wp-content/uploads/2023/05/GRADIENT.png");
+  background: url("http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png");
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -178,7 +179,7 @@ html #header-1 .header-bg, body #header-1 .header-bg {
 }
 html #header-1 .header-bg2, body #header-1 .header-bg2 {
   position: absolute;
-  background: url("http://orchidee.test/wp-content/uploads/2023/05/GRADIENT.png");
+  background: url("http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png");
   background-position: center;
   background-size: cover;
   z-index: -3;
@@ -203,7 +204,7 @@ html #header-2 .header-container, body #header-2 .header-container {
   height: 100% !important;
   align-items: center;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 1060px) {
   html #header-2 .header-container, body #header-2 .header-container {
     padding: 24px 0px;
   }
@@ -212,13 +213,13 @@ html #header-2 .header-container .custom-logo-link .custom-logo, body #header-2 
   max-height: 45px !important;
   max-width: 125px;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 1060px) {
   html #header-2 .header-container .custom-logo-link .custom-logo, body #header-2 .header-container .custom-logo-link .custom-logo {
     max-height: 36px !important;
     max-width: 112px;
   }
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 1060px) {
   html #header-2 .header-container .odb_nav-menu-mobile, body #header-2 .header-container .odb_nav-menu-mobile {
     display: none;
   }
@@ -230,7 +231,7 @@ html #header-2 .header-container .odb_nav-menu-mobile i:hover, body #header-2 .h
   transform: scale(1.1);
   transition: 0.2s;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 1060px) {
   html #header-2 .header-container .odb_mobile-nav, body #header-2 .header-container .odb_mobile-nav {
     overflow: hidden;
     max-height: 0;
@@ -243,11 +244,18 @@ html #header-2 .header-container .odb_nav-menu-mobile i:hover, body #header-2 .h
 html #header-2 .header-container .lang-sosmed, body #header-2 .header-container .lang-sosmed {
   align-items: center;
   margin: 0px !important;
+  padding: 0px !important;
 }
-@media only screen and (max-width: 576px) {
+html #header-2 .header-container .lang-sosmed .header-area, body #header-2 .header-container .lang-sosmed .header-area {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+html #header-2 .header-container .lang-sosmed ul, body #header-2 .header-container .lang-sosmed ul {
+  margin: 0;
+}
+@media only screen and (max-width: 1060px) {
   html #header-2 .header-container .lang-sosmed ul, body #header-2 .header-container .lang-sosmed ul {
     float: none;
-    margin: 0;
     padding: 20px 0px;
     justify-content: center;
     gap: 30px;
@@ -276,7 +284,7 @@ html #header-2 .header-container .nav-search .navbar-nav li, body #header-2 .hea
   text-align: center;
   padding: 0px 8px;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 1060px) {
   html #header-2 .header-container .nav-search .navbar-nav li, body #header-2 .header-container .nav-search .navbar-nav li {
     width: 100%;
     padding: 5px 0px;
@@ -308,7 +316,7 @@ html #header-2 .header-container .nav-search .navbar-nav li .sub-menu, body #hea
   min-width: 168px;
   z-index: 99999999999;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 1060px) {
   html #header-2 .header-container .nav-search .navbar-nav li .sub-menu, body #header-2 .header-container .nav-search .navbar-nav li .sub-menu {
     background: rgba(118, 45, 90, 0.7);
     top: 34px;
@@ -391,7 +399,7 @@ html #header-2 .header-bg-container, body #header-2 .header-bg-container {
 }
 html #header-2 .header-bg, body #header-2 .header-bg {
   filter: saturate(2);
-  background: url("http://orchidee.test/wp-content/uploads/2023/05/GRADIENT.png");
+  background: url("http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png");
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -898,7 +906,7 @@ html content .odb_sliderContainer .odb_sliderItemContainer .orchidee_sliderItem 
 
 .footer {
   position: relative;
-  background: url("http://orchidee.test/wp-content/uploads/2023/05/GRADIENT.png");
+  background: url("http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png");
   background-position: center;
   background-size: cover;
   padding: 27px 60px 60px 60px;
@@ -1090,7 +1098,7 @@ html content .odb_sliderContainer .odb_sliderItemContainer .orchidee_sliderItem 
 }
 .sidebar-area-one h3 {
   padding: 15px 23px;
-  background: url("http://orchidee.test/wp-content/uploads/2023/05/GRADIENT.png");
+  background: url("http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png");
   background-position: bottom center;
   background-size: 200%;
   font-weight: 700;
@@ -1099,7 +1107,7 @@ html content .odb_sliderContainer .odb_sliderItemContainer .orchidee_sliderItem 
 }
 .sidebar-area-one h2 {
   padding: 18px 23px;
-  background: url("http://orchidee.test/wp-content/uploads/2023/05/GRADIENT.png");
+  background: url("http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png");
   background-position: bottom center;
   background-size: 200%;
   font-weight: 700;
@@ -1107,10 +1115,10 @@ html content .odb_sliderContainer .odb_sliderItemContainer .orchidee_sliderItem 
   letter-spacing: 0.33em;
   margin-bottom: 50px;
 }
-.sidebar-area-one .wp-block-latest-posts {
+.sidebar-area-one .wp-block-laco.id-posts {
   padding: 9px 24px;
 }
-.sidebar-area-one .wp-block-latest-posts li a {
+.sidebar-area-one .wp-block-laco.id-posts li a {
   text-decoration: none;
   font-size: 14px;
   letter-spacing: 0.11em;
@@ -1127,13 +1135,13 @@ html content .odb_sliderContainer .odb_sliderItemContainer .orchidee_sliderItem 
   margin-bottom: 72px !important;
   text-align: center !important;
 }
-.odb_sidebar-promo li .wp-block-latest-posts__featured-image {
+.odb_sidebar-promo li .wp-block-laco.id-posts__featured-image {
   margin-bottom: 32px !important;
 }
-.odb_sidebar-promo li .wp-block-latest-posts__featured-image img {
+.odb_sidebar-promo li .wp-block-laco.id-posts__featured-image img {
   width: 100%;
 }
-.odb_sidebar-promo li .wp-block-latest-posts__post-title {
+.odb_sidebar-promo li .wp-block-laco.id-posts__post-title {
   font-weight: 700 !important;
   font-size: 24px !important;
   line-height: 28px !important;
@@ -1141,7 +1149,7 @@ html content .odb_sliderContainer .odb_sliderItemContainer .orchidee_sliderItem 
   color: #762D5A !important;
   margin-bottom: 8px !important;
 }
-.odb_sidebar-promo li .wp-block-latest-posts__post-excerpt {
+.odb_sidebar-promo li .wp-block-laco.id-posts__post-excerpt {
   font-weight: 600 !important;
   font-size: 14px !important;
   letter-spacing: 0.045em !important;

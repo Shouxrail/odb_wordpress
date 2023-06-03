@@ -68,7 +68,7 @@
                 <i class="fa-sharp fa-solid fa-bars fa-2xl" style="color: #ffffff;" onclick="toggleMobileNavMenu()"></i>
             </div>
             <div class="odb_mobile-nav col-md-11 row" id="odb_mobile-nav">
-                <div class="nav-search col-md-9">
+                <div class="nav-search col-md-9 col-sm-10">
                     <?php
 
                 wp_nav_menu( array(
@@ -80,7 +80,7 @@
 
                 ?>
                 </div>
-                <div class="lang-sosmed row col-md-3">
+                <div class="lang-sosmed row col-md-3 col-sm-2">
                     <?php dynamic_sidebar( 'header_area_two' ); ?>
                 </div>
             </div>
