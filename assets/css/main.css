@@ -161,7 +161,7 @@ html #header-1 .header-bg-container, body #header-1 .header-bg-container {
 }
 html #header-1 .header-bg, body #header-1 .header-bg {
   filter: saturate(2);
-  background: url("http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png");
+  background: url("https://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png");
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -179,7 +179,7 @@ html #header-1 .header-bg, body #header-1 .header-bg {
 }
 html #header-1 .header-bg2, body #header-1 .header-bg2 {
   position: absolute;
-  background: url("http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png");
+  background: url("https://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png");
   background-position: center;
   background-size: cover;
   z-index: -3;
@@ -399,7 +399,7 @@ html #header-2 .header-bg-container, body #header-2 .header-bg-container {
 }
 html #header-2 .header-bg, body #header-2 .header-bg {
   filter: saturate(2);
-  background: url("http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png");
+  background: url("https://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png");
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -463,7 +463,7 @@ html content .odb_sliderContainer .odb_sliderItemContainer .orchidee_sliderItem 
 @media only screen and (max-width: 576px) {
   .odb_beranda-subtitle {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 20px !important;
     letter-spacing: 0.05em;
   }
 }
@@ -906,7 +906,7 @@ html content .odb_sliderContainer .odb_sliderItemContainer .orchidee_sliderItem 
 
 .footer {
   position: relative;
-  background: url("http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png");
+  background: url("https://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png");
   background-position: center;
   background-size: cover;
   padding: 27px 60px 60px 60px;
@@ -999,6 +999,21 @@ html content .odb_sliderContainer .odb_sliderItemContainer .orchidee_sliderItem 
 @media only screen and (max-width: 576px) {
   .footer .footer-container .odb_footer-right nav ul li a {
     font-size: 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .footer .footer-container .odb_footer-right nav ul li a {
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .footer .footer-container .odb_footer-right nav ul li a {
+    font-size: 6px;
+  }
+}
+@media only screen and (max-width: 325px) {
+  .footer .footer-container .odb_footer-right nav ul li a {
+    font-size: 4px;
   }
 }
 .footer .footer-container .odb_footer-right nav ul li a:hover {
@@ -1098,7 +1113,7 @@ html content .odb_sliderContainer .odb_sliderItemContainer .orchidee_sliderItem 
 }
 .sidebar-area-one h3 {
   padding: 15px 23px;
-  background: url("http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png");
+  background: url("https://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png");
   background-position: bottom center;
   background-size: 200%;
   font-weight: 700;
@@ -1107,7 +1122,7 @@ html content .odb_sliderContainer .odb_sliderItemContainer .orchidee_sliderItem 
 }
 .sidebar-area-one h2 {
   padding: 18px 23px;
-  background: url("http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png");
+  background: url("https://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png");
   background-position: bottom center;
   background-size: 200%;
   font-weight: 700;
@@ -1129,6 +1144,38 @@ html content .odb_sliderContainer .odb_sliderItemContainer .orchidee_sliderItem 
 }
 .sidebar-area-one h4 {
   margin-bottom: 8px;
+}
+.sidebar-area-one .odb_sidebar-treatment-post .wp-block-latest-posts__list {
+  padding: 24px 0px 45px 24px;
+}
+.sidebar-area-one .odb_sidebar-treatment-post .wp-block-latest-posts__list li {
+  font-size: 14px;
+  line-height: 258.9%;
+  letter-spacing: 0.11em;
+}
+.sidebar-area-one .odb_sidebar-treatment-post .wp-block-latest-posts__list li a {
+  text-decoration: none;
+  color: #000000;
+}
+.sidebar-area-one .odb_sidebar-promotion-post img {
+  width: 100%;
+}
+.sidebar-area-one .odb_sidebar-promotion-post .wp-block-latest-posts__post-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.33em;
+  color: #762D5A;
+  text-decoration: none;
+}
+.sidebar-area-one .odb_sidebar-promotion-post .wp-block-latest-posts__post-excerpt {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 170%;
+  text-align: center;
+  letter-spacing: 0.045em;
+  color: #762D5A;
 }
 
 .odb_sidebar-promo li {

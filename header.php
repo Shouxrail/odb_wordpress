@@ -38,7 +38,7 @@
                         'menu' => 'primary',
                         'container' => '',
                         'theme_location' => 'primary',
-                        'items_wrap' => '<ul id="" class="navbar-nav flex-md-row justify-content-end col-xl-9">%3$s<li id="odb_search-nav" class=""><a href="'.get_search_link().'">SEARCH</a></li></ul>'
+                        'items_wrap' => '<ul id="" class="navbar-nav flex-md-row justify-content-end col-xl-9">%3$s<li id="odb_search-nav" class=""><a href="http://orchidee.test/?s=">SEARCH</a></li></ul>'
                     ) );
 
                     ?>
@@ -75,7 +75,7 @@
                     'menu' => 'primary',
                     'container' => '',
                     'theme_location' => 'primary',
-                    'items_wrap' => '<ul id="" class="navbar-nav flex-md-row justify-content-end">%3$s<li id="odb_search-nav" class=""><a href="'.get_search_link().'">SEARCH</a></li></ul>'
+                    'items_wrap' => '<ul id="" class="navbar-nav flex-md-row justify-content-end">%3$s<li id="odb_search-nav" class=""><a href="http://orchidee.test/?s=">SEARCH</a></li></ul>'
                 ) );
 
                 ?>

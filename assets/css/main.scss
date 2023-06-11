@@ -214,7 +214,7 @@ html, body {
         }
         .header-bg {
             filter: saturate(2);
-            background: url('http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png');
+            background: url('https://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png');
             background-position: center;
             background-size: cover;
             position: absolute;
@@ -230,7 +230,7 @@ html, body {
         }
         .header-bg2 {
             position: absolute;
-            background: url('http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png');
+            background: url('https://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png');
             background-position: center;
             background-size: cover;
             z-index: -3;
@@ -490,7 +490,7 @@ html, body {
 
         .header-bg {
             filter: saturate(2);
-            background: url('http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png');
+            background: url('https://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png');
             background-position: center;
             background-size: cover;
             position: absolute;
@@ -553,7 +553,7 @@ html, body {
 
     @media only screen and (max-width: 576px) {
         font-weight: 700;
-        font-size: 20px;
+        font-size: 20px !important;
         letter-spacing: 0.05em;
     }
 }
@@ -1065,7 +1065,7 @@ html, body {
 
 .footer {
     position: relative;
-    background: url('http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png');
+    background: url('https://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png');
     background-position: center;
     background-size: cover;
     padding: 27px 60px 60px 60px;
@@ -1130,7 +1130,6 @@ html, body {
                     list-style-type: none;
                     padding: 0px;
                     display: flex;
-                    // flex-wrap: wrap;
                     justify-content: center;
                     
                     @media only screen and (min-width: 576px) {
@@ -1162,6 +1161,17 @@ html, body {
                                 font-size: 10px;
                             }
 
+                            @media only screen and (max-width: 480px) {
+                                font-size: 8px;
+                            }
+
+                            @media only screen and (max-width: 400px) {
+                                font-size: 6px;
+                            }
+
+                            @media only screen and (max-width: 325px) {
+                                font-size: 4px;
+                            }
     
                             &:hover {
                                 font-weight: 800;
@@ -1280,7 +1290,7 @@ html, body {
 
     h3 {
         padding: 15px 23px;
-        background: url('http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png');
+        background: url('https://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png');
         background-position: bottom center;
         background-size: 200%;
         font-weight: 700;
@@ -1290,7 +1300,7 @@ html, body {
 
     h2 {
         padding: 18px 23px;
-        background: url('http://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png');
+        background: url('https://orchidee.co.id/wp-content/uploads/2023/05/GRADIENT.png');
         background-position: bottom center;
         background-size: 200%;
         font-weight: 700;
@@ -1318,6 +1328,49 @@ html, body {
 
     h4 {
         margin-bottom: 8px;
+    }
+
+    .odb_sidebar-treatment-post {
+        .wp-block-latest-posts__list {
+            padding: 24px 0px 45px 24px;
+            
+            li {
+                font-size: 14px;
+                line-height: 258.9%;
+                letter-spacing: 0.11em;
+    
+                a {
+                    text-decoration: none;
+                    color: $black;
+                }
+            }
+    
+        }
+    }
+
+    .odb_sidebar-promotion-post {
+        img {
+            width: 100%;
+        }
+
+        .wp-block-latest-posts__post-title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: 0.33em;
+            color: $primaryColor;
+            text-decoration: none;
+        }
+
+        .wp-block-latest-posts__post-excerpt {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 170%;
+            text-align: center;
+            letter-spacing: 0.045em;
+            color: $primaryColor;
+        }
     }
 }
 
