@@ -1059,6 +1059,11 @@ html content .odb_sliderContainer .odb_sliderItemContainer .orchidee_sliderItem 
   margin-bottom: 24px;
   word-break: break-all;
 }
+@media only screen and (max-width: 576px) {
+  .odb_category-content .odb_cat-title {
+    font-size: 36px;
+  }
+}
 .odb_category-content .attachment-post-thumbnail {
   width: 100%;
   height: auto;
@@ -1087,6 +1092,11 @@ html content .odb_sliderContainer .odb_sliderItemContainer .orchidee_sliderItem 
   font-size: 36px;
   letter-spacing: 0.045em;
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 576px) {
+  .odb_category-content .entry .odb_post-title {
+    font-size: 26px;
+  }
 }
 .odb_category-content .entry .odb_post-title a {
   text-decoration: none;
@@ -1232,6 +1242,11 @@ breadcrumbs a {
   letter-spacing: 0.33em;
   margin-bottom: 24px;
 }
+@media only screen and (max-width: 576px) {
+  .odb_produk-group h2 {
+    font-size: 36px;
+  }
+}
 .odb_produk-group .odb_produk-cat {
   font-size: 11px;
   letter-spacing: 0.41em;
@@ -1284,17 +1299,18 @@ breadcrumbs a {
      object-fit: cover;
 }
 
-.odb_form label {
+label, .frm_primary_label {
   font-weight: 400 !important;
   font-size: 18px !important;
   letter-spacing: 0.045em !important;
 }
-.odb_form input, .odb_form textarea {
+
+input, textarea, .wpforms-field-large, .wpforms-field-required {
   border: none !important;
   box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
 
-.odb_form-submit {
+.odb_form-submit, .frm_button_submit {
   border-radius: 0 !important;
   width: 280px !important;
   font-size: 18px !important;
@@ -1352,6 +1368,11 @@ breadcrumbs a {
   font-size: 36px;
   letter-spacing: 0.33em;
   margin-bottom: 32px;
+}
+@media only screen and (max-width: 576px) {
+  .odb_category-content main .odb_cat-blog-recent .odb_cat-blog-last article .entry-header .entry-title, .odb_category-content-blog main .odb_cat-blog-recent .odb_cat-blog-last article .entry-header .entry-title {
+    font-size: 26px;
+  }
 }
 .odb_category-content main .odb_cat-blog-recent .odb_cat-blog-last article .entry-header .entry-title a, .odb_category-content-blog main .odb_cat-blog-recent .odb_cat-blog-last article .entry-header .entry-title a {
   color: #762D5A;
@@ -1541,4 +1562,9 @@ breadcrumbs a {
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.33em;
+}
+
+.odb_beranda-youtube {
+  max-width: 1090px;
+  margin: auto;
 }/*# sourceMappingURL=main.css.map */

@@ -1223,6 +1223,10 @@ html, body {
         letter-spacing: 0.33em;
         margin-bottom: 24px;
         word-break: break-all;
+
+        @media only screen and (max-width: 576px) {
+            font-size: 36px;
+        }
     }
 
     .attachment-post-thumbnail {
@@ -1260,6 +1264,10 @@ html, body {
             font-size: 36px;
             letter-spacing: 0.045em;
             margin-bottom: 30px ;
+
+            @media only screen and (max-width: 576px) {
+                font-size: 26px;
+            }
     
             a {
                 text-decoration: none;
@@ -1434,6 +1442,10 @@ breadcrumbs {
         font-size: 48px;
         letter-spacing: 0.33em;
         margin-bottom: 24px;
+        
+        @media only screen and (max-width: 576px) {
+            font-size: 36px;
+        }
     }
     
     .odb_produk-cat {
@@ -1494,20 +1506,18 @@ breadcrumbs {
     }
 }
 
-.odb_form {
-    label {
-        font-weight: 400 !important;
-        font-size: 18px !important; 
-        letter-spacing: 0.045em !important;
-    }
-
-    input, textarea {
-        border: none !important;
-        box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1) !important;
-    }
+label, .frm_primary_label {
+    font-weight: 400 !important;
+    font-size: 18px !important; 
+    letter-spacing: 0.045em !important;
 }
 
-.odb_form-submit {
+input, textarea, .wpforms-field-large, .wpforms-field-required {
+    border: none !important;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1) !important;
+}
+
+.odb_form-submit, .frm_button_submit {
     border-radius: 0 !important;
     width: 280px !important;
     font-size: 18px !important;
@@ -1574,6 +1584,10 @@ breadcrumbs {
                             font-size: 36px;
                             letter-spacing: 0.33em;
                             margin-bottom: 32px;
+
+                            @media only screen and (max-width: 576px) {
+                                font-size: 26px;
+                            }
                             
                             a {
                                 color: $primaryColor;
@@ -1818,4 +1832,9 @@ breadcrumbs {
     font-weight: 700;
     font-size: 20px;
     letter-spacing: 0.33em;
+}
+
+.odb_beranda-youtube {
+    max-width: 1090px;
+    margin: auto;
 }
