@@ -7,7 +7,15 @@ get_header(); ?>
 
 <content>
     <div class="odb_search-container">
-        <?php get_search_form(); ?>
+        <div class="container">
+            <form role="search" method="get" id="searchform" class="searchform" action="http://orchidee.test/">
+                <label class="screen-reader-text" for="s">Search for:</label>
+                <div class="d-flex">
+                    <input type="text" value="" name="s" id="s" style="flex: 1">
+                    <input type="submit" id="searchsubmit" value="Search" style="min-width: 100px">
+                </div>
+            </form>
+        </div>
 
         <div id="primary">
             <main id="main" class="site-main" role="main">
